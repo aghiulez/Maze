@@ -2,18 +2,13 @@ import java.util.Random;
 import java.util.Stack;
 import java.awt.Point;
 
-//https://en.wikipedia.org/wiki/Maze_solving_algorith
-
-
-//👣
-//* 
 
             // *  *  *  *  *  *  *  *  *  *  *  *  *
             // *  -  -  -  *                       *
             // *  *  *  |  *  *  *  *  *     *  *  *
             // *  - - - -  *           *           *
             // *  |  *  *  *     *     *  *  *     *
-            // *  | _            *           *     *
+            // *  | _ _          *           *     *
             // *  *  *  *  *  *  *  *  *     *     *
             // *           *                 *     *
             // *     *     *     *  *  *  *  *     *
@@ -90,10 +85,6 @@ public class MazeSolver{
     public static void main(String[] args) 
     { 
         MazeGenerator myMaze = new MazeGenerator(5);
-        myMaze.printBoard();
         MazeSolver myMazeSolver = new MazeSolver(myMaze); 
-        //MazeSolver.printBoard();
-    
-
     } 
 }

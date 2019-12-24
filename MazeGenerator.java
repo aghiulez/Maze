@@ -9,23 +9,22 @@ import java.awt.Point;
 import java.util.Stack;
 
 
-public class MazeGenerator {
+public class MazeGenerator{
     int dimensions;
     private int[][] board;
     Stack<Point> stack = new Stack<Point>();
     Map<Point,Directions> directions = new HashMap<Point,Directions>();
-    private Random randomGenerator;
+    private Random randomGenerator = new Random();
 
     public MazeGenerator(int dimensions){
         this.dimensions = dimensions;
         this.board = new int[dimensions][dimensions];
-        this.randomGenerator = new Random();
-        recursiveBacktrackingWithStackGenerator();
+        BacktrackingWithStackGenerator();
  
     }
 
-
-    public int direction(Point pointA, Point pointB){
+    // CHANGE THIS TO RETURN DIRECTION AFTER PUTTING KEY INTO DICT
+    public void direction(Point pointA, Point pointB){
 
         if(!this.directions.containsKey(pointA)){
             this.directions.put(pointA,new Directions());
@@ -33,34 +32,26 @@ public class MazeGenerator {
         if(!this.directions.containsKey(pointB)){
             this.directions.put(pointB,new Directions());
         }
-
-
         // 1 for up -- 2 for right -- 3 for down -- 4 for left
         if (pointB.getY() > pointA.getY()){
             this.directions.get(pointB).DOWN = true;
             this.directions.get(pointA).UP = true;
-            return 1;
         }
         else if (pointB.getX() > pointA.getX()){
             this.directions.get(pointB).LEFT = true;
             this.directions.get(pointA).RIGHT = true;
-            return 2;
         }
         else if (pointB.getY() < pointA.getY()){
             this.directions.get(pointB).UP = true;
             this.directions.get(pointA).DOWN = true;
-            return 3;
         }
         else if (pointB.getX() < pointA.getX()){
             this.directions.get(pointB).RIGHT = true;
             this.directions.get(pointA).LEFT = true;
-            return 4;
         }
-
-        return 0;
     }
 
-    public void recursiveBacktrackingWithStackGenerator(){
+    public void BacktrackingWithStackGenerator(){
         // Choose the initial cell, mark it as visited and push it to the stack
         this.board[0][0] = 1;
         this.stack.push(new Point(0,0));
@@ -79,8 +70,6 @@ public class MazeGenerator {
                 Point goingTo = canGoTo.get(randomIndex);
         //      Remove the wall between the current cell and the chosen cell
                 direction(currentCell,goingTo);
-
-
         //      Mark the chosen cell as visited and push it to the stack
                 this.board[(int)goingTo.getX()][(int)goingTo.getY()] = 1;
                 this.stack.push(goingTo);  
@@ -88,7 +77,6 @@ public class MazeGenerator {
         }
     }
 
-    //function to return a list of unvisited neighbors
     public List<Point> possibleVisits(int x, int y){
         List<Point> myList = new ArrayList<Point>();
         // up     ->   y -= 1   (CAN'T IF Y == 0)
@@ -109,60 +97,6 @@ public class MazeGenerator {
         }
         return myList;
     }
-
-    public void printBoard(){
-        int max = (this.dimensions * 2) + 1;
-        int y = 0;
-        for (int i = 0 ; i < max ; i++){
-            if (i % 2 == 0){
-                int x = 0;
-                for (int j = 0 ; j < ((this.dimensions * 2) + 1); j++){  // if j odd -->  maybe  UP/DOWN wall
-                    if(j%2 != 0 && j != 1){
-                        x += 1;
-                    }
-
-
-                    //  we've got to check if the down wall for point(x,y) exists
-                    Point searchPoint = new Point(x,y);
-                    if (i != max - 1 && this.directions.get(searchPoint).DOWN == true){
-                        System.out.print(j == (this.dimensions * 2)? "*": (j % 2 != 0 && i != 0 && i != this.dimensions*2)? "   ": "*  ");
-
-                    }
-                    else
-                    {
-                        System.out.print(j == (this.dimensions * 2)? "*": (j % 2 != 0 && i != 0 && i != this.dimensions*2)? "*  ": "*  ");
-                    }
-
-                    
-                }
-                System.out.println();        
-            }
-            else{
-                int x = 0;
-                for (int j = 0 ; j < ((this.dimensions*2) + 1); j++){      // odd j's are cells! ---> even j's are LEFT/RIGHT
-                    if (j % 2 != 0 && j != 1){
-                        x += 1;
-                    }
-                    Point searchPoint = new Point(x,y);
-                    System.out.print(j%2 != 0? "     ": j == 0 || j == this.dimensions*2 ? "*": 
-                    this.directions.get(searchPoint).RIGHT == true? " ":"*");
-
-                }
-                y += 1;                
-                System.out.println();
-            }
-        }
-    }
-
-    public static void main(String[] args) 
-    { 
-        MazeGenerator myMaze = new MazeGenerator(5); 
-        myMaze.printBoard();
-    
-
-    } 
-
-
 }
 
 
