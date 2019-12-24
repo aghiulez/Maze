@@ -11,7 +11,7 @@ import java.util.Stack;
 
 public class MazeGenerator {
     int dimensions;
-    int[][] board;
+    private int[][] board;
     Stack<Point> stack = new Stack<Point>();
     Map<Point,Directions> directions = new HashMap<Point,Directions>();
     private Random randomGenerator;
@@ -154,11 +154,9 @@ public class MazeGenerator {
         }
     }
 
-
-
     public static void main(String[] args) 
     { 
-        MazeGenerator myMaze = new MazeGenerator(10); 
+        MazeGenerator myMaze = new MazeGenerator(5); 
         myMaze.printBoard();
     
 
