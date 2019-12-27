@@ -48,7 +48,44 @@ public class MazeView{
         }
     }
 
+    public void UpdateBoard(int direction, int x, int y){
+        int relativeX = 2 * (x + 1) - 1;
+        int relativeY = 2 * (y + 1) - 1;
+
+        this.viewboard[relativeY][relativeX] = "x  ";
+
+        // if (direction == 1){ 
+        //     //this.viewboard[relativeY][relativeX] = "xxx";
+        //     this.viewboard[relativeY+1][relativeX] = "|  ";
+        // }
+        // else if (direction == 2){ 
+        //     //this.viewboard[relativeY][relativeX] = "xxx";
+        //     this.viewboard[relativeY][relativeX+1] = "-  ";
+        // }
+        // else if (direction == 3){ 
+        //     //this.viewboard[relativeY][relativeX] = "xxx";
+        //     this.viewboard[relativeY-1][relativeX] = "|  ";
+        // }
+        // else if (direction == 4){ 
+        //     //this.viewboard[relativeY][relativeX] = "xxx";
+        //     this.viewboard[relativeY][relativeX+1] = "-  ";
+        // }
+
+
+        
+
+        
+
+    }
+
+
+
+
+
     public void printBoard(){
+        //add
+
+        //
         for (int y = 0; y < this.viewboard.length; y++){
             for (int x = 0; x < this.viewboard.length; x++){
                 System.out.print(this.viewboard[y][x]);
@@ -58,12 +95,14 @@ public class MazeView{
     }
     public static void main(String[] args) 
     { 
-        MazeGenerator myMaze = new MazeGenerator(5);
+        MazeGenerator myMaze = new MazeGenerator(15);
 
         MazeView view = new MazeView(myMaze);
         view.printBoard();
         System.out.println();
-        //MazeSolver.printBoard();
+        //view.UpdateBoard(0,0);
+        view.printBoard();
+    
     
 
     } 

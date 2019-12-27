@@ -11,7 +11,7 @@ import java.util.Stack;
 
 public class MazeGenerator{
     int dimensions;
-    private int[][] board;
+    int[][] board;
     Stack<Point> stack = new Stack<Point>();
     Map<Point,Directions> directions = new HashMap<Point,Directions>();
     private Random randomGenerator = new Random();
@@ -51,6 +51,45 @@ public class MazeGenerator{
         }
     }
 
+    public void direction2(Point pointA, Point pointB){
+
+        if(!this.directions.containsKey(pointA)){this.directions.put(pointA,new Directions());}
+        if(!this.directions.containsKey(pointB)){this.directions.put(pointB,new Directions());}
+        
+        //POINTA: UP (goes up)
+        //POINTB: DOWN
+        if((int)pointA.getY() < (int)pointB.getY()){  // increase in y for pointA
+            this.directions.get(pointA).UP = true;
+            this.directions.get(pointB).DOWN = true;
+        }
+
+        //POINTA: RIGHT
+        //POINTB: LEFT
+        else if((int)pointA.getX() < (int)pointB.getX()){  // increase in x for pointA
+            this.directions.get(pointA).RIGHT = true;
+            this.directions.get(pointB).LEFT = true;
+        }
+
+
+        //POINTA: DOWN
+        //POINTB: UP
+        else if((int)pointA.getY() > (int)pointB.getY()){  // decrease in y for pointA
+            this.directions.get(pointA).DOWN = true;
+            this.directions.get(pointB).UP = true;
+        }
+
+        //POINTA: LEFT
+        //POINTB: RIGHT
+        else if((int)pointA.getX() > (int)pointB.getX()){  // decrease in x for pointA
+            this.directions.get(pointA).LEFT = true;
+            this.directions.get(pointB).RIGHT = true;
+        }
+
+
+    }
+
+
+
     public void BacktrackingWithStackGenerator(){
         // Choose the initial cell, mark it as visited and push it to the stack
         this.board[0][0] = 1;
@@ -61,7 +100,11 @@ public class MazeGenerator{
        //   Pop a cell from the stack and make it a current cell
             currentCell = this.stack.pop();
        //   If the current cell has any neighbours which have not been visited
-            List<Point> canGoTo = possibleVisits((int)currentCell.getX(),(int)currentCell.getY());
+            //List<Point> canGoTo = possibleVisits((int)currentCell.getX(),(int)currentCell.getY());
+            List<Point> canGoTo = Utils.hasNotVisited(this.board, currentCell);
+            //--System.out.println(canGoTo);
+            
+            
             if (canGoTo.size() > 0){
         //      Push the current cell to the stack
                 this.stack.push(currentCell);
@@ -69,11 +112,15 @@ public class MazeGenerator{
                 int randomIndex = randomGenerator.nextInt(canGoTo.size());
                 Point goingTo = canGoTo.get(randomIndex);
         //      Remove the wall between the current cell and the chosen cell
-                direction(currentCell,goingTo);
+                //direction(currentCell,goingTo); // this is probably fucked...
+                direction2(currentCell,goingTo);
         //      Mark the chosen cell as visited and push it to the stack
-                this.board[(int)goingTo.getX()][(int)goingTo.getY()] = 1;
+                //this.board[(int)goingTo.getX()][(int)goingTo.getY()] = 1; fucked...
+                this.board[(int)goingTo.getY()][(int)goingTo.getX()] = 1;
                 this.stack.push(goingTo);  
             }
+        
+            
         }
     }
 
@@ -97,7 +144,24 @@ public class MazeGenerator{
         }
         return myList;
     }
+
+
+
+
+
+
+    public static void main(String[] args) 
+    { 
+
+        MazeGenerator myMaze = new MazeGenerator(5);
+        MazeView view = new MazeView(myMaze);
+
+        view.printBoard();
+
+    } 
+
 }
+
 
 
 
