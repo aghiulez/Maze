@@ -15,81 +15,31 @@ public class MazeGenerator{
     Stack<Point> stack = new Stack<Point>();
     Map<Point,Directions> directions = new HashMap<Point,Directions>();
     private Random randomGenerator = new Random();
-
     public MazeGenerator(int dimensions){
         this.dimensions = dimensions;
         this.board = new int[dimensions][dimensions];
         BacktrackingWithStackGenerator();
- 
     }
-
-    // CHANGE THIS TO RETURN DIRECTION AFTER PUTTING KEY INTO DICT
     public void direction(Point pointA, Point pointB){
-
-        if(!this.directions.containsKey(pointA)){
-            this.directions.put(pointA,new Directions());
-        }
-        if(!this.directions.containsKey(pointB)){
-            this.directions.put(pointB,new Directions());
-        }
-        // 1 for up -- 2 for right -- 3 for down -- 4 for left
-        if (pointB.getY() > pointA.getY()){
-            this.directions.get(pointB).DOWN = true;
-            this.directions.get(pointA).UP = true;
-        }
-        else if (pointB.getX() > pointA.getX()){
-            this.directions.get(pointB).LEFT = true;
-            this.directions.get(pointA).RIGHT = true;
-        }
-        else if (pointB.getY() < pointA.getY()){
-            this.directions.get(pointB).UP = true;
-            this.directions.get(pointA).DOWN = true;
-        }
-        else if (pointB.getX() < pointA.getX()){
-            this.directions.get(pointB).RIGHT = true;
-            this.directions.get(pointA).LEFT = true;
-        }
-    }
-
-    public void direction2(Point pointA, Point pointB){
-
         if(!this.directions.containsKey(pointA)){this.directions.put(pointA,new Directions());}
         if(!this.directions.containsKey(pointB)){this.directions.put(pointB,new Directions());}
-        
-        //POINTA: UP (goes up)
-        //POINTB: DOWN
         if((int)pointA.getY() < (int)pointB.getY()){  // increase in y for pointA
             this.directions.get(pointA).UP = true;
             this.directions.get(pointB).DOWN = true;
         }
-
-        //POINTA: RIGHT
-        //POINTB: LEFT
         else if((int)pointA.getX() < (int)pointB.getX()){  // increase in x for pointA
             this.directions.get(pointA).RIGHT = true;
             this.directions.get(pointB).LEFT = true;
         }
-
-
-        //POINTA: DOWN
-        //POINTB: UP
         else if((int)pointA.getY() > (int)pointB.getY()){  // decrease in y for pointA
             this.directions.get(pointA).DOWN = true;
             this.directions.get(pointB).UP = true;
         }
-
-        //POINTA: LEFT
-        //POINTB: RIGHT
         else if((int)pointA.getX() > (int)pointB.getX()){  // decrease in x for pointA
             this.directions.get(pointA).LEFT = true;
             this.directions.get(pointB).RIGHT = true;
         }
-
-
     }
-
-
-
     public void BacktrackingWithStackGenerator(){
         // Choose the initial cell, mark it as visited and push it to the stack
         this.board[0][0] = 1;
@@ -103,8 +53,6 @@ public class MazeGenerator{
             //List<Point> canGoTo = possibleVisits((int)currentCell.getX(),(int)currentCell.getY());
             List<Point> canGoTo = Utils.hasNotVisited(this.board, currentCell);
             //--System.out.println(canGoTo);
-            
-            
             if (canGoTo.size() > 0){
         //      Push the current cell to the stack
                 this.stack.push(currentCell);
@@ -112,18 +60,13 @@ public class MazeGenerator{
                 int randomIndex = randomGenerator.nextInt(canGoTo.size());
                 Point goingTo = canGoTo.get(randomIndex);
         //      Remove the wall between the current cell and the chosen cell
-                //direction(currentCell,goingTo); // this is probably fucked...
-                direction2(currentCell,goingTo);
+                direction(currentCell,goingTo);
         //      Mark the chosen cell as visited and push it to the stack
-                //this.board[(int)goingTo.getX()][(int)goingTo.getY()] = 1; fucked...
                 this.board[(int)goingTo.getY()][(int)goingTo.getX()] = 1;
                 this.stack.push(goingTo);  
             }
-        
-            
         }
     }
-
     public List<Point> possibleVisits(int x, int y){
         List<Point> myList = new ArrayList<Point>();
         // up     ->   y -= 1   (CAN'T IF Y == 0)
@@ -144,22 +87,6 @@ public class MazeGenerator{
         }
         return myList;
     }
-
-
-
-
-
-
-    public static void main(String[] args) 
-    { 
-
-        MazeGenerator myMaze = new MazeGenerator(5);
-        MazeView view = new MazeView(myMaze);
-
-        view.printBoard();
-
-    } 
-
 }
 
 
