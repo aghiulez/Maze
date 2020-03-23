@@ -8,6 +8,8 @@ public class MazeSolver{
     Stack<Point> pathStack = new Stack<Point>();
     MazeView view;
 
+    
+
     public MazeSolver(MazeGenerator maze){
         this.myMaze = maze;
         this.view = new MazeView(maze);
