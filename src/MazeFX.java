@@ -13,8 +13,8 @@ import javafx.beans.value.ChangeListener;
 //View
 public class MazeFX extends Application implements Runnable{
 
-
-    int dimensions = 20;
+    int size = 500;
+    int dimensions = 10;
     Maze myMaze = new Maze(dimensions);
     Generator generator = new Generator(myMaze);
 
@@ -46,8 +46,8 @@ public class MazeFX extends Application implements Runnable{
     public GridPane MazePane(){
         maze = new GridPane();
         maze.getStyleClass().add("maze");
-        ColumnConstraints column = new ColumnConstraints(50);
-        RowConstraints row       = new RowConstraints(50);
+        ColumnConstraints column = new ColumnConstraints(size/dimensions);
+        RowConstraints row       = new RowConstraints(size/dimensions);
         for (int i = 0; i < myMaze.board.length; i++){
             maze.getColumnConstraints().add(column);
             maze.getRowConstraints().add(row);
@@ -66,7 +66,7 @@ public class MazeFX extends Application implements Runnable{
 
     public void removeWall(Cell cell){
         BorderPane cellPane = getCellPane(cell);
-        Circle pointer = new Circle(10);
+        Circle pointer = new Circle((size/dimensions)/10);
         pointer.setFill(Color.RED);
         cellPane.setCenter(pointer);
         if (cellPane != null){
@@ -145,7 +145,7 @@ public class MazeFX extends Application implements Runnable{
         });
 
         GridPane maze = MazePane();
-        Scene scene = new Scene(maze,myMaze.board.length*50,myMaze.board.length*50);
+        Scene scene = new Scene(maze,size,size);
         scene.getStylesheets().add("MazeFX.css");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
