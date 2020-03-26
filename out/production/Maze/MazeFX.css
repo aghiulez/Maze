@@ -1,0 +1,14 @@
+.maze{
+    -fx-background-color: green ;
+    /*-fx-padding: 10 ;*/
+}
+.cell {
+    -fx-background-color: black,white;
+    /*-fx-background-insets: 0, 1 1 1 1;*/
+
+}
+
+.wall {
+    -fx-background-color: black;
+}
+
