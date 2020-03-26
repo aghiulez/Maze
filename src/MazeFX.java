@@ -1,5 +1,6 @@
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.layout.*;
@@ -13,8 +14,9 @@ import javafx.beans.value.ChangeListener;
 //View
 public class MazeFX extends Application implements Runnable{
 
+    int speed = 100;
     int size = 500;
-    int dimensions = 10;
+    int dimensions = 15;
     Maze myMaze = new Maze(dimensions);
     Generator generator = new Generator(myMaze);
 
@@ -22,16 +24,18 @@ public class MazeFX extends Application implements Runnable{
     GridPane maze;
 
     public BorderPane CellPane(){
+        int thickness = (size/dimensions)/10;
+
         BorderPane cell = new BorderPane();
         cell.getStyleClass().add("cell");
         Pane topwall = new Pane();
-        topwall.setPrefHeight(10);
+        topwall.setPrefHeight(thickness);
         Pane rightwall = new Pane();
-        rightwall.setPrefWidth(10);
+        rightwall.setPrefWidth(thickness);
         Pane bottomwall = new Pane();
-        bottomwall.setPrefHeight(10);
+        bottomwall.setPrefHeight(thickness);
         Pane leftwall = new Pane();
-        leftwall.setPrefWidth(10);
+        leftwall.setPrefWidth(thickness);
         topwall.getStyleClass().add("wall");
         rightwall.getStyleClass().add("wall");
         bottomwall.getStyleClass().add("wall");
@@ -86,7 +90,7 @@ public class MazeFX extends Application implements Runnable{
                 //System.out.print("Left ");
                 cellPane.setLeft(null);
             }
-            System.out.println();
+
         }
     }
     public BorderPane getCellPane(Cell curr){
@@ -137,7 +141,7 @@ public class MazeFX extends Application implements Runnable{
                     removeWall(to);
                 });
                 synchronized (this) {
-                    try { wait(100); }
+                    try { wait(speed); }
                     catch (InterruptedException e) { }
                 }
 
@@ -145,6 +149,7 @@ public class MazeFX extends Application implements Runnable{
         });
 
         GridPane maze = MazePane();
+        maze.setAlignment(Pos.CENTER);
         Scene scene = new Scene(maze,size,size);
         scene.getStylesheets().add("MazeFX.css");
         primaryStage.setScene(scene);
