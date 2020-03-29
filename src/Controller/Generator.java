@@ -1,3 +1,8 @@
+package Controller;
+
+import Model.Cell;
+import Model.Maze;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -10,7 +15,7 @@ public class Generator {
     Stack<Cell> stack = new Stack<>();
     private Random randomGenerator = new Random();
 
-    Generator(Maze m){
+    public Generator(Maze m){
         this.maze = m;
     }
 

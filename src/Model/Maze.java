@@ -1,3 +1,4 @@
+package Model;
 
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
@@ -6,9 +7,9 @@ import javafx.beans.property.SimpleObjectProperty;
 
 //Model
 public class Maze {
-    Cell[][] board;
+    public Cell[][] board;
 
-    //Cell currentLocation; //update view
+    //Model.Cell currentLocation; //update view
 
     private ObjectProperty<Cell> currLocation = new SimpleObjectProperty<Cell>();
     public final Cell getCurrLocation() {return currLocation.get();}
@@ -18,7 +19,7 @@ public class Maze {
     public ObjectProperty<Cell> CurrLocationProperty() {return currLocation;}
 
 
-    Maze(int d){
+    public Maze(int d){
 
         this.board = new Cell[d][d];
 

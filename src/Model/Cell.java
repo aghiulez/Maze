@@ -1,9 +1,11 @@
+package Model;
+
 import javafx.beans.value.ObservableBooleanValue;
 
 public class Cell {
-    boolean hasVisited;
-    boolean NorthWall, WestWall, SouthWall, EastWall;
-    int x,y;
+    public boolean hasVisited;
+    public boolean NorthWall, WestWall, SouthWall, EastWall;
+    public int x,y;
     Cell(int x, int y){
         this.x = x;
         this.y = y;

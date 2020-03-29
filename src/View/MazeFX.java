@@ -1,3 +1,8 @@
+package View;
+
+import Model.*;
+import Controller.*;
+
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.geometry.Pos;
@@ -21,11 +26,7 @@ public class MazeFX extends Application implements Runnable{
 
     Maze myMaze = new Maze(dimensions);
     Generator generator = new Generator(myMaze);
-
-
-
     GridPane maze;
-
 
     public BorderPane CellPane(){
         int thickness = (int) Math.ceil((float)(size/dimensions)/10); //
@@ -57,9 +58,6 @@ public class MazeFX extends Application implements Runnable{
         maze.getStyleClass().add("maze");
         ColumnConstraints column = new ColumnConstraints(size/dimensions);
         RowConstraints row       = new RowConstraints(size/dimensions);
-//        System.out.println("cell size: " + size/dimensions);
-//        int thickness = (int) Math.ceil((float)(size/dimensions)/10);
-//        System.out.println("thickness: " + thickness);
         for (int i = 0; i < myMaze.board.length; i++){
             maze.getColumnConstraints().add(column);
             maze.getRowConstraints().add(row);
@@ -74,8 +72,6 @@ public class MazeFX extends Application implements Runnable{
         }
         return maze;
     }
-
-
     public void removeWall(Cell cell){
         BorderPane cellPane = getCellPane(cell);
         Circle pointer = new Circle((size/dimensions)/10);
@@ -118,11 +114,9 @@ public class MazeFX extends Application implements Runnable{
         }
         return null;
     }
-
     public void GenerateMaze()  {
         generator.DFSIterativeBacktracker();
     }
-
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("MazeFX");
@@ -155,7 +149,7 @@ public class MazeFX extends Application implements Runnable{
         GridPane maze = MazePane();
         maze.setAlignment(Pos.CENTER);
         Scene scene = new Scene(maze,size,size);
-        scene.getStylesheets().add("MazeFX.css");
+        scene.getStylesheets().add("View/MazeFX.css");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();
