@@ -16,15 +16,20 @@ public class MazeFX extends Application implements Runnable{
 
     int speed = 100;
     int size = 500;
-    int dimensions = 15;
+    int dimensions = 100;
+
+
     Maze myMaze = new Maze(dimensions);
     Generator generator = new Generator(myMaze);
 
 
+
     GridPane maze;
 
+
     public BorderPane CellPane(){
-        int thickness = (size/dimensions)/10;
+        int thickness = (int) Math.ceil((float)(size/dimensions)/10); //
+
 
         BorderPane cell = new BorderPane();
         cell.getStyleClass().add("cell");
@@ -52,6 +57,9 @@ public class MazeFX extends Application implements Runnable{
         maze.getStyleClass().add("maze");
         ColumnConstraints column = new ColumnConstraints(size/dimensions);
         RowConstraints row       = new RowConstraints(size/dimensions);
+//        System.out.println("cell size: " + size/dimensions);
+//        int thickness = (int) Math.ceil((float)(size/dimensions)/10);
+//        System.out.println("thickness: " + thickness);
         for (int i = 0; i < myMaze.board.length; i++){
             maze.getColumnConstraints().add(column);
             maze.getRowConstraints().add(row);
@@ -104,20 +112,15 @@ public class MazeFX extends Application implements Runnable{
 
                 BorderPane cellpane = (BorderPane) n;
                 //((BorderPane) n).setBottom(null);
-                return cellpane;
+//                return cellpane;
+                return (BorderPane) n;
             }
         }
         return null;
     }
 
     public void GenerateMaze()  {
-        // while the generator is running
-        //  listen to changes on current location -> removeWall(current)
-
         generator.DFSIterativeBacktracker();
-//        Platform.runLater( () -> {
-//        });
-
     }
 
     @Override
@@ -148,6 +151,7 @@ public class MazeFX extends Application implements Runnable{
             }
         });
 
+
         GridPane maze = MazePane();
         maze.setAlignment(Pos.CENTER);
         Scene scene = new Scene(maze,size,size);
@@ -159,14 +163,12 @@ public class MazeFX extends Application implements Runnable{
 
 
         Thread runner = new Thread(this);
-        runner.setDaemon(true);  // so thread won't stop program from ending
+        runner.setDaemon(true);
         runner.start();
 
 
     }
     public void run(){
-
-
         GenerateMaze();
     };
 }
