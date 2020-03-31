@@ -5,9 +5,12 @@ import Controller.*;
 
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
@@ -21,12 +24,12 @@ public class MazeFX extends Application implements Runnable{
 
     int speed = 100;
     int size = 500;
-    int dimensions = 100;
+    int dimensions = 10;
 
-
-    Maze myMaze = new Maze(dimensions);
-    Generator generator = new Generator(myMaze);
+    Maze myMaze;
+    Generator generator;
     GridPane maze;
+
 
     public BorderPane CellPane(){
         int thickness = (int) Math.ceil((float)(size/dimensions)/10); //
@@ -54,23 +57,23 @@ public class MazeFX extends Application implements Runnable{
         return cell;
     }
     public GridPane MazePane(){
-        maze = new GridPane();
-        maze.getStyleClass().add("maze");
+        GridPane mymaze = new GridPane();
+        mymaze.getStyleClass().add("maze");
         ColumnConstraints column = new ColumnConstraints(size/dimensions);
         RowConstraints row       = new RowConstraints(size/dimensions);
         for (int i = 0; i < myMaze.board.length; i++){
-            maze.getColumnConstraints().add(column);
-            maze.getRowConstraints().add(row);
+            mymaze.getColumnConstraints().add(column);
+            mymaze.getRowConstraints().add(row);
         }
 
 
         for(int i = 0; i < myMaze.board.length; i++){
             for(int j = 0; j < myMaze.board.length; j++){
                 BorderPane cell = CellPane();
-                maze.add(cell,i,j);
+                mymaze.add(cell,i,j);
             }
         }
-        return maze;
+        return mymaze;
     }
     public void removeWall(Cell cell){
         BorderPane cellPane = getCellPane(cell);
@@ -120,6 +123,32 @@ public class MazeFX extends Application implements Runnable{
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("MazeFX");
+        Button btn = new Button("start"); // add stop button too?
+        BorderPane view = new BorderPane();
+        view.setBottom(btn);
+        Scene scene = new Scene(view, size, size + 25);
+        scene.getStylesheets().add("View/MazeFX.css");
+        primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
+        primaryStage.show();
+        Thread runner = new Thread(this);
+        runner.setDaemon(true);
+
+        btn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                myMaze = new Maze(dimensions); /// --> add dimension choosing functionality
+                generator = new Generator(myMaze); // --> add speed of generator
+                maze = MazePane();
+                view.setCenter(maze);
+                runner.start();
+                btn.setDisable(true);
+
+            }
+        });
+
+    }
+    public void run(){
         myMaze.CurrLocationProperty().addListener(new ChangeListener(){
             @Override public void changed(ObservableValue o,Object oldVal,
                                           Object newVal){
@@ -145,24 +174,6 @@ public class MazeFX extends Application implements Runnable{
             }
         });
 
-
-        GridPane maze = MazePane();
-        maze.setAlignment(Pos.CENTER);
-        Scene scene = new Scene(maze,size,size);
-        scene.getStylesheets().add("View/MazeFX.css");
-        primaryStage.setScene(scene);
-        primaryStage.setResizable(false);
-        primaryStage.show();
-
-
-
-        Thread runner = new Thread(this);
-        runner.setDaemon(true);
-        runner.start();
-
-
-    }
-    public void run(){
         GenerateMaze();
     };
 }

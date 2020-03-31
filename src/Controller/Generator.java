@@ -9,7 +9,7 @@ import java.util.Stack;
 
 import java.util.Random;
 
-//Controller
+//Controller -> Make this an interface (allowing for implementation of different generator methods)
 public class Generator {
     Maze maze;
     Stack<Cell> stack = new Stack<>();
