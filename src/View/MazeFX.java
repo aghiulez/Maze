@@ -11,6 +11,8 @@ import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Spinner;
+import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
@@ -19,16 +21,21 @@ import javafx.stage.Stage;
 import javafx.beans.value.ObservableValue;
 import javafx.beans.value.ChangeListener;
 
+import java.util.concurrent.atomic.AtomicBoolean;
+
 //View
 public class MazeFX extends Application implements Runnable{
 
-    int speed = 100;
+    int speed = 1;
     int size = 500;
     int dimensions = 10;
 
     Maze myMaze;
     Generator generator;
     GridPane maze;
+
+    private AtomicBoolean running = new AtomicBoolean(false);
+    Thread ActiveThread;
 
 
     public BorderPane CellPane(){
@@ -59,8 +66,8 @@ public class MazeFX extends Application implements Runnable{
     public GridPane MazePane(){
         GridPane mymaze = new GridPane();
         mymaze.getStyleClass().add("maze");
-        ColumnConstraints column = new ColumnConstraints(size/dimensions);
-        RowConstraints row       = new RowConstraints(size/dimensions);
+        ColumnConstraints column = new ColumnConstraints((int) Math.ceil((float)(size/dimensions)));
+        RowConstraints row       = new RowConstraints((int) Math.ceil((float)(size/dimensions)));
         for (int i = 0; i < myMaze.board.length; i++){
             mymaze.getColumnConstraints().add(column);
             mymaze.getRowConstraints().add(row);
@@ -77,7 +84,7 @@ public class MazeFX extends Application implements Runnable{
     }
     public void removeWall(Cell cell){
         BorderPane cellPane = getCellPane(cell);
-        Circle pointer = new Circle((size/dimensions)/10);
+        Circle pointer = new Circle((int) Math.ceil((float)(size/dimensions)/5));
         pointer.setFill(Color.RED);
         cellPane.setCenter(pointer);
         if (cellPane != null){
@@ -120,60 +127,144 @@ public class MazeFX extends Application implements Runnable{
     public void GenerateMaze()  {
         generator.DFSIterativeBacktracker();
     }
+
+
+
+    public void createThread(){
+        ActiveThread = new Thread(this);
+        ActiveThread.setDaemon(true);
+        ActiveThread.start();
+    }
+    public VBox menuSpinners(){
+
+
+
+        // Dimensions chooser
+        final Spinner<Integer> dimensionsSpinner = new Spinner<>();
+        SpinnerValueFactory<Integer> valueFactory =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(5,100,5,5);
+        dimensionsSpinner.setValueFactory(valueFactory);
+        dimensionsSpinner.getStyleClass().add(Spinner.STYLE_CLASS_SPLIT_ARROWS_HORIZONTAL);
+
+
+
+        //speed chooser
+        final Spinner<Integer> speedSpinner = new Spinner<>();
+        SpinnerValueFactory<Integer> speedValueFactory =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(50,500,50,50);
+        speedSpinner.setValueFactory(speedValueFactory);
+        speedSpinner.getStyleClass().add(Spinner.STYLE_CLASS_SPLIT_ARROWS_HORIZONTAL);
+
+        return new VBox(dimensionsSpinner,speedSpinner);
+
+
+    }
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("MazeFX");
-        Button btn = new Button("start"); // add stop button too?
-        BorderPane view = new BorderPane();
-        view.setBottom(btn);
-        Scene scene = new Scene(view, size, size + 25);
-        scene.getStylesheets().add("View/MazeFX.css");
-        primaryStage.setScene(scene);
-        primaryStage.setResizable(false);
-        primaryStage.show();
-        Thread runner = new Thread(this);
-        runner.setDaemon(true);
 
-        btn.setOnAction(new EventHandler<ActionEvent>() {
+        Button startbtn = new Button("start"); // add stop button too?
+        Button backbtn = new Button("back"); // add stop button too?
+
+
+
+        //View
+        BorderPane view = new BorderPane();
+
+        VBox menu = menuSpinners();
+        view.setCenter(menu);
+        view.setAlignment(menu, Pos.CENTER);
+        menu.setAlignment(Pos.CENTER);
+
+
+
+        // Start btn props
+        view.setBottom(startbtn);
+        startbtn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
+
+                Node spinnernode = menu.getChildren().get(0);
+                Node speednode = menu.getChildren().get(1);
+                if (spinnernode instanceof Spinner && speednode instanceof  Spinner){
+                    dimensions = (int) ((Spinner) spinnernode).getValue();
+                    speed      = (int) ((Spinner) speednode).getValue();
+                }
+                System.out.println(speed);
+
+
+
                 myMaze = new Maze(dimensions); /// --> add dimension choosing functionality
                 generator = new Generator(myMaze); // --> add speed of generator
                 maze = MazePane();
                 view.setCenter(maze);
-                runner.start();
-                btn.setDisable(true);
+                view.setAlignment(maze,Pos.CENTER);
+                maze.setAlignment(Pos.CENTER);
+
+
+                view.setBottom(backbtn);
+
+                createThread();
+
 
             }
         });
+        // back btn props
+        backbtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                ActiveThread.stop();
+                //view.setCenter(dimensionsSpinner);
+                view.setCenter(menu);
+                view.setBottom(startbtn);
+                speed = 1000;
+            }
+        });
 
+
+        //Misc
+        view.setAlignment(startbtn,Pos.CENTER);
+        view.setAlignment(backbtn,Pos.CENTER);
+
+
+        Scene scene = new Scene(view, size, size  + 25);
+        scene.getStylesheets().add("View/MazeFX.css");
+        primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
+        primaryStage.show();
     }
     public void run(){
-        myMaze.CurrLocationProperty().addListener(new ChangeListener(){
-            @Override public void changed(ObservableValue o,Object oldVal,
-                                          Object newVal){
+            running.set(true);
+            myMaze.CurrLocationProperty().addListener(new ChangeListener(){
+                @Override public void changed(ObservableValue o,Object oldVal,
+                                              Object newVal){
 
 //                String coords = "("+ myMaze.getCurrLocation().x+ ","+ myMaze.getCurrLocation().y + ")";
-                Cell from = (Cell) oldVal;
-                Cell to = (Cell) newVal;
+                    Cell from = (Cell) oldVal;
+                    Cell to = (Cell) newVal;
 
-                //removeWall(myMaze.board[myMaze.getCurrLocation().y][myMaze.getCurrLocation().x]);
-                Platform.runLater( () -> {
-                    if(from != null){
+                    //removeWall(myMaze.board[myMaze.getCurrLocation().y][myMaze.getCurrLocation().x]);
+                    Platform.runLater( () -> {
+                        if(from != null){
 
-                        removeWall(from);
-                        getCellPane(from).setCenter(null);
+                            removeWall(from);
+                            getCellPane(from).setCenter(null);
+                        }
+                        removeWall(to);
+                    });
+                    synchronized (this) {
+                        try { wait(speed); }
+                        catch (InterruptedException e) { }
                     }
-                    removeWall(to);
-                });
-                synchronized (this) {
-                    try { wait(speed); }
-                    catch (InterruptedException e) { }
+
                 }
-
+            });
+            while(running.get()){
+                GenerateMaze();
             }
-        });
 
-        GenerateMaze();
+
+
     };
 }
