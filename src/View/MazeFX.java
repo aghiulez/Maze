@@ -1,5 +1,4 @@
 package View;
-
 import Model.*;
 import Controller.*;
 
@@ -21,21 +20,23 @@ import javafx.stage.Stage;
 import javafx.beans.value.ObservableValue;
 import javafx.beans.value.ChangeListener;
 
+import java.applet.Applet;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 //View
-public class MazeFX extends Application implements Runnable{
+public class MazeFX extends Application implements Runnable {
 
     int speed = 1;
     int size = 500;
     int dimensions = 10;
-
     Maze myMaze;
     Generator generator;
+    Solver solver;
     GridPane maze;
-
+    
     private AtomicBoolean running = new AtomicBoolean(false);
     Thread ActiveThread;
+
 
 
     public BorderPane CellPane(){
@@ -125,8 +126,33 @@ public class MazeFX extends Application implements Runnable{
         return null;
     }
     public void GenerateMaze()  {
+        myMaze.CurrLocationProperty().addListener(new ChangeListener(){
+                @Override public void changed(ObservableValue o,Object oldVal,
+                                              Object newVal){
+
+                    Cell from = (Cell) oldVal;
+                    Cell to = (Cell) newVal;
+
+                    Platform.runLater( () -> {
+                        if(from != null){
+
+                            removeWall(from);
+                            getCellPane(from).setCenter(null);
+                        }
+                        removeWall(to);
+                    });
+                    synchronized (this) {
+                        try { wait(speed); }
+                        catch (InterruptedException e) { }
+                    }
+
+                }
+            });
         generator.DFSIterativeBacktracker();
     }
+    public void SolveMaze(){
+        solver.DFSIterativeBacktracker();
+    };
 
 
 
@@ -197,6 +223,7 @@ public class MazeFX extends Application implements Runnable{
 
                 myMaze = new Maze(dimensions); /// --> add dimension choosing functionality
                 generator = new Generator(myMaze); // --> add speed of generator
+                solver    = new Solver(myMaze);
                 maze = MazePane();
                 view.setCenter(maze);
                 view.setAlignment(maze,Pos.CENTER);
@@ -235,36 +262,16 @@ public class MazeFX extends Application implements Runnable{
         primaryStage.show();
     }
     public void run(){
-            running.set(true);
-            myMaze.CurrLocationProperty().addListener(new ChangeListener(){
-                @Override public void changed(ObservableValue o,Object oldVal,
-                                              Object newVal){
-
-//                String coords = "("+ myMaze.getCurrLocation().x+ ","+ myMaze.getCurrLocation().y + ")";
-                    Cell from = (Cell) oldVal;
-                    Cell to = (Cell) newVal;
-
-                    //removeWall(myMaze.board[myMaze.getCurrLocation().y][myMaze.getCurrLocation().x]);
-                    Platform.runLater( () -> {
-                        if(from != null){
-
-                            removeWall(from);
-                            getCellPane(from).setCenter(null);
-                        }
-                        removeWall(to);
-                    });
-                    synchronized (this) {
-                        try { wait(speed); }
-                        catch (InterruptedException e) { }
-                    }
-
-                }
-            });
-            while(running.get()){
-                GenerateMaze();
-            }
-
-
-
+//            running.set(true);
+//            while(running.get()){
+//                GenerateMaze();
+//
+//            }
+        GenerateMaze();
+        SolveMaze();
     };
+
+    public static void main(String[] args) {
+        launch(args);
+    }
 }

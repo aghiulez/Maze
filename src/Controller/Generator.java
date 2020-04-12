@@ -5,20 +5,12 @@ import Model.Maze;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
-import java.util.Random;
 
-//Controller -> Make this an interface (allowing for implementation of different generator methods)
-public class Generator {
-    Maze maze;
-    Stack<Cell> stack = new Stack<>();
-    private Random randomGenerator = new Random();
-
-    public Generator(Maze m){
-        this.maze = m;
+public class Generator extends MazeController{
+    public Generator(Maze m) {
+        super(m);
     }
-
     public void DFSIterativeBacktracker()  {
 
 
@@ -41,8 +33,8 @@ public class Generator {
 
         }
     }
-
-    private Cell planVisit(Cell current){
+    @Override
+    Cell planVisit(Cell current){
         List<Cell> possible = new ArrayList<Cell>();
         //North
         if(current.y != 0 && (!this.maze.board[current.y-1][current.x].hasVisited)){
@@ -61,12 +53,13 @@ public class Generator {
             possible.add(this.maze.board[current.y][current.x-1]);
         }
         if (possible.size() > 0){
-            int randomIndex = randomGenerator.nextInt(possible.size());
+            int randomIndex = super.randomGenerator.nextInt(possible.size());
             return possible.get(randomIndex);
         }
         return current; // returns current if no possible visit
     }
-    private void visit(Cell current, Cell next){
+    @Override
+    void visit(Cell current, Cell next){
         //Moving North
         if(current.y-1 == next.y){
             current.NorthWall = false;
@@ -81,7 +74,7 @@ public class Generator {
 
         }
         //Moving South
-        if(current.y+1 == next.y){
+        else if(current.y+1 == next.y){
             current.SouthWall = false;
             next.NorthWall    = false;
 
