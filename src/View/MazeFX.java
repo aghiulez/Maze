@@ -88,6 +88,7 @@ public class MazeFX extends Application implements Runnable {
         Circle pointer = new Circle((int) Math.ceil((float)(size/dimensions)/5));
         pointer.setFill(Color.RED);
         cellPane.setCenter(pointer);
+
         if (cellPane != null){
             if (!cell.NorthWall){
                 //      System.out.print("Top ");
@@ -107,6 +108,37 @@ public class MazeFX extends Application implements Runnable {
             }
 
         }
+    }
+    public void drawPath(Cell from, Cell to){
+        BorderPane cellPaneFrom = getCellPane(from);
+        BorderPane cellPaneTo   = getCellPane(to);
+
+        if(cellPaneTo.getStyle() == "-fx-background-color: rgba(32,200,59,0.3);" || cellPaneTo.getStyle() == "-fx-background-color: rgba(200,10,0,0.3);"){
+            cellPaneTo.setStyle("-fx-background-color: rgba(200,10,0,0.3);");
+            if(cellPaneFrom.getStyle() == "-fx-background-color: rgba(32,200,59,0.3);"){
+                cellPaneFrom.setStyle("-fx-background-color: rgba(200,10,0,0.3);");
+            }
+        }
+        else{
+            cellPaneTo.setStyle("-fx-background-color: rgba(32,200,59,0.3);");
+            if(cellPaneFrom.getStyle() == "-fx-background-color: rgba(200,10,0,0.3);"){
+                cellPaneFrom.setStyle("-fx-background-color: rgba(32,200,59,0.3);");
+            }
+        }
+
+//        if(cellPane.getStyle() == "-fx-background-color: rgba(32,200,59,0.3);" ||cellPane.getStyle() == "-fx-background-color: rgba(200,10,0,0.3);"){
+//            cellPane.setStyle("-fx-background-color: rgba(200,10,0,0.3);");
+//        }
+//        else{
+//            cellPane.setStyle("-fx-background-color: rgba(32,200,59,0.3);");
+//        }
+
+
+
+
+
+
+
     }
     public BorderPane getCellPane(Cell curr){
         for(Node n: maze.getChildren()){
@@ -151,6 +183,24 @@ public class MazeFX extends Application implements Runnable {
         generator.DFSIterativeBacktracker();
     }
     public void SolveMaze(){
+        myMaze.CurrLocationProperty().addListener(new ChangeListener(){
+            @Override public void changed(ObservableValue o,Object oldVal,
+                                          Object newVal){
+
+                Cell from = (Cell) oldVal;
+                Cell to = (Cell) newVal;
+
+                Platform.runLater( () -> {
+
+                    drawPath(from,to);
+                });
+                synchronized (this) {
+                    try { wait(speed); }
+                    catch (InterruptedException e) { }
+                }
+
+            }
+        });
         solver.DFSIterativeBacktracker();
     };
 

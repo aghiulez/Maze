@@ -19,19 +19,18 @@ public class Solver extends MazeController{
 
         this.stack.push(maze.getCurrLocation());
 
+
 //        while (!this.stack.empty()){
         while (maze.getCurrLocation() != maze.board[maze.board.length -1][maze.board.length -1]){
-            //maze.currentLocation = this.stack.pop();
             maze.setCurrentLocation(this.stack.pop());
+
             Cell next = planVisit(maze.getCurrLocation());
 
             if (next != maze.getCurrLocation()){
                 this.stack.push(maze.getCurrLocation());
-//                visit(maze.getCurrLocation(),next);
-                next.hasVisited = true;
-//                maze.setCurrentLocation(maze.currentLocation);
                 this.stack.push(next);
             }
+
 
 
         }
