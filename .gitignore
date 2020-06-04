@@ -4,3 +4,11 @@ out/
 .idea/
 exportToHTML/
 META-INF/
+.gradle/
+build/
+tmp/
+logs/
+gradle.wrapper/
+build.gradle
+gradlew/
+RUNNING_PID/

@@ -1,15 +1,15 @@
-package Model;
+package com.maze.mazeFX.Model;
 
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 
 
 
-//Model
+//com.maze.mazeFX.Model
 public class Maze {
     public Cell[][] board;
 
-    //Model.Cell currentLocation; //update view
+    //com.maze.mazeFX.Model.Cell currentLocation; //update view
 
     private ObjectProperty<Cell> currLocation = new SimpleObjectProperty<Cell>();
     public final Cell getCurrLocation() {return currLocation.get();}

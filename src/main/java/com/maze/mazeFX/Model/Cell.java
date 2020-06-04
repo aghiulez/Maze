@@ -1,6 +1,4 @@
-package Model;
-
-import javafx.beans.value.ObservableBooleanValue;
+package com.maze.mazeFX.Model;
 
 public class Cell {
     public boolean hasVisited;

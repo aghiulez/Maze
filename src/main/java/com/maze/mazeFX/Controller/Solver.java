@@ -1,7 +1,7 @@
-package Controller;
+package com.maze.mazeFX.Controller;
 
-import Model.Cell;
-import Model.Maze;
+import com.maze.mazeFX.Model.Cell;
+import com.maze.mazeFX.Model.Maze;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
-package View;
-import Model.*;
-import Controller.*;
+package com.maze.mazeFX.View;
+import com.maze.mazeFX.Model.*;
+import com.maze.mazeFX.Controller.*;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -10,6 +10,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.layout.*;
@@ -20,11 +21,10 @@ import javafx.stage.Stage;
 import javafx.beans.value.ObservableValue;
 import javafx.beans.value.ChangeListener;
 
-import java.applet.Applet;
-import java.util.concurrent.atomic.AtomicBoolean;
 
-//View
 public class MazeFX extends Application implements Runnable {
+    private final Object monitor = this;
+    private volatile boolean paused = false;
 
     int speed = 1;
     int size = 500;
@@ -34,17 +34,40 @@ public class MazeFX extends Application implements Runnable {
     Solver solver;
     GridPane maze;
     
-    private AtomicBoolean running = new AtomicBoolean(false);
+//    private AtomicBoolean running = new AtomicBoolean(true);
     Thread ActiveThread;
+    
+    public void delay(){
+        synchronized (monitor) {
+            try {
 
-
-
+                if (paused) {
+                    synchronized (monitor) {
+                        try {
+                            monitor.wait();
+                        }
+                        catch (InterruptedException e) {
+                        }
+                    }
+                }
+                else{
+                    synchronized (monitor) {
+                        monitor.wait(speed);
+                    }
+                }
+            }
+            catch (InterruptedException e) { }
+        }
+    }
     public BorderPane CellPane(){
         int thickness = (int) Math.ceil((float)(size/dimensions)/10); //
 
 
         BorderPane cell = new BorderPane();
-        cell.getStyleClass().add("cell");
+        //cell.getStyleClass().add("cell");
+        //in-line
+        cell.setStyle("-fx-background-color: black,white");
+
         Pane topwall = new Pane();
         topwall.setPrefHeight(thickness);
         Pane rightwall = new Pane();
@@ -52,11 +75,18 @@ public class MazeFX extends Application implements Runnable {
         Pane bottomwall = new Pane();
         bottomwall.setPrefHeight(thickness);
         Pane leftwall = new Pane();
+
         leftwall.setPrefWidth(thickness);
-        topwall.getStyleClass().add("wall");
-        rightwall.getStyleClass().add("wall");
-        bottomwall.getStyleClass().add("wall");
-        leftwall.getStyleClass().add("wall");
+//        topwall.getStyleClass().add("wall");
+//        rightwall.getStyleClass().add("wall");
+//        bottomwall.getStyleClass().add("wall");
+//        leftwall.getStyleClass().add("wall");
+        //in-line
+        topwall.setStyle("-fx-background-color: black");
+        rightwall.setStyle("-fx-background-color: black");
+        bottomwall.setStyle("-fx-background-color: black");
+        leftwall.setStyle("-fx-background-color: black");
+
         cell.setTop(topwall);
         cell.setRight(rightwall);
         cell.setBottom(bottomwall);
@@ -66,7 +96,12 @@ public class MazeFX extends Application implements Runnable {
     }
     public GridPane MazePane(){
         GridPane mymaze = new GridPane();
-        mymaze.getStyleClass().add("maze");
+
+
+
+        //mymaze.getStyleClass().add("maze");
+        //in-line
+        mymaze.setStyle("-fx-background-color: black");
         ColumnConstraints column = new ColumnConstraints((int) Math.ceil((float)(size/dimensions)));
         RowConstraints row       = new RowConstraints((int) Math.ceil((float)(size/dimensions)));
         for (int i = 0; i < myMaze.board.length; i++){
@@ -78,6 +113,7 @@ public class MazeFX extends Application implements Runnable {
         for(int i = 0; i < myMaze.board.length; i++){
             for(int j = 0; j < myMaze.board.length; j++){
                 BorderPane cell = CellPane();
+
                 mymaze.add(cell,i,j);
             }
         }
@@ -91,19 +127,15 @@ public class MazeFX extends Application implements Runnable {
 
         if (cellPane != null){
             if (!cell.NorthWall){
-                //      System.out.print("Top ");
                 cellPane.setTop(null);
             }
             if (!cell.WestWall){
-                //    System.out.print("Right ");
                 cellPane.setRight(null);
             }
             if (!cell.SouthWall){
-                //  System.out.print("Bot ");
                 cellPane.setBottom(null);
             }
             if (!cell.EastWall){
-                //System.out.print("Left ");
                 cellPane.setLeft(null);
             }
 
@@ -125,19 +157,6 @@ public class MazeFX extends Application implements Runnable {
                 cellPaneFrom.setStyle("-fx-background-color: rgba(32,200,59,0.3);");
             }
         }
-
-//        if(cellPane.getStyle() == "-fx-background-color: rgba(32,200,59,0.3);" ||cellPane.getStyle() == "-fx-background-color: rgba(200,10,0,0.3);"){
-//            cellPane.setStyle("-fx-background-color: rgba(200,10,0,0.3);");
-//        }
-//        else{
-//            cellPane.setStyle("-fx-background-color: rgba(32,200,59,0.3);");
-//        }
-
-
-
-
-
-
 
     }
     public BorderPane getCellPane(Cell curr){
@@ -173,10 +192,13 @@ public class MazeFX extends Application implements Runnable {
                         }
                         removeWall(to);
                     });
-                    synchronized (this) {
-                        try { wait(speed); }
-                        catch (InterruptedException e) { }
-                    }
+//                    synchronized (this) {
+//                        try {
+//                            wait(speed);
+//                        }
+//                        catch (InterruptedException e) { }
+//                    }
+                    delay();
 
                 }
             });
@@ -186,7 +208,6 @@ public class MazeFX extends Application implements Runnable {
         myMaze.CurrLocationProperty().addListener(new ChangeListener(){
             @Override public void changed(ObservableValue o,Object oldVal,
                                           Object newVal){
-
                 Cell from = (Cell) oldVal;
                 Cell to = (Cell) newVal;
 
@@ -194,25 +215,22 @@ public class MazeFX extends Application implements Runnable {
 
                     drawPath(from,to);
                 });
-                synchronized (this) {
-                    try { wait(speed); }
-                    catch (InterruptedException e) { }
-                }
+                delay();
 
             }
         });
         solver.DFSIterativeBacktracker();
     };
 
-
-
     public void createThread(){
         ActiveThread = new Thread(this);
         ActiveThread.setDaemon(true);
         ActiveThread.start();
     }
-    public VBox menuSpinners(){
 
+    //menu items
+    public VBox menuSpinners(){
+        Label Title = new Label("MazeFX");
 
 
         // Dimensions chooser
@@ -231,9 +249,47 @@ public class MazeFX extends Application implements Runnable {
         speedSpinner.setValueFactory(speedValueFactory);
         speedSpinner.getStyleClass().add(Spinner.STYLE_CLASS_SPLIT_ARROWS_HORIZONTAL);
 
-        return new VBox(dimensionsSpinner,speedSpinner);
+        return new VBox(Title,dimensionsSpinner,speedSpinner);
 
 
+    }
+
+
+
+
+
+    // make a middle menu
+    public HBox bottomMenu(Button backbtn){
+        Button pause = new Button("pause");
+        pause.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                paused = paused ? false : true;
+                pause.setText(paused ? "play" : "pause");
+                synchronized (monitor) {
+                    monitor.notifyAll();
+                }
+            }
+        });
+
+
+        Button slower = new Button("slower");
+        Button faster = new Button("faster");
+
+        faster.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                speed = speed - 10;
+            }
+        });
+        slower.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                speed = speed + 50;
+            }
+        });
+
+        return new HBox (backbtn,pause,slower,faster);
     }
 
     @Override
@@ -245,9 +301,10 @@ public class MazeFX extends Application implements Runnable {
 
 
 
-        //View
+        //com.maze.mazeFX.View
         BorderPane view = new BorderPane();
 
+        //center start menu
         VBox menu = menuSpinners();
         view.setCenter(menu);
         view.setAlignment(menu, Pos.CENTER);
@@ -261,29 +318,24 @@ public class MazeFX extends Application implements Runnable {
             @Override
             public void handle(ActionEvent actionEvent) {
 
-                Node spinnernode = menu.getChildren().get(0);
-                Node speednode = menu.getChildren().get(1);
+                Node spinnernode = menu.getChildren().get(1);
+                Node speednode = menu.getChildren().get(2);
                 if (spinnernode instanceof Spinner && speednode instanceof  Spinner){
                     dimensions = (int) ((Spinner) spinnernode).getValue();
                     speed      = (int) ((Spinner) speednode).getValue();
                 }
-                System.out.println(speed);
-
-
 
                 myMaze = new Maze(dimensions); /// --> add dimension choosing functionality
                 generator = new Generator(myMaze); // --> add speed of generator
                 solver    = new Solver(myMaze);
                 maze = MazePane();
+                //ADD
+
                 view.setCenter(maze);
                 view.setAlignment(maze,Pos.CENTER);
                 maze.setAlignment(Pos.CENTER);
-
-
-                view.setBottom(backbtn);
-
+                view.setBottom(bottomMenu(backbtn));
                 createThread();
-
 
             }
         });
@@ -292,7 +344,6 @@ public class MazeFX extends Application implements Runnable {
             @Override
             public void handle(ActionEvent actionEvent) {
                 ActiveThread.stop();
-                //view.setCenter(dimensionsSpinner);
                 view.setCenter(menu);
                 view.setBottom(startbtn);
                 speed = 1000;
@@ -300,25 +351,34 @@ public class MazeFX extends Application implements Runnable {
         });
 
 
+        // bottom hbox
+
+
+
+
         //Misc
         view.setAlignment(startbtn,Pos.CENTER);
         view.setAlignment(backbtn,Pos.CENTER);
 
-
+        //ADD
         Scene scene = new Scene(view, size, size  + 25);
-        scene.getStylesheets().add("View/MazeFX.css");
+//        Scene scene = new Scene(view, size, size  + 25);
+        //scene.getStylesheets().addAll(getClass().getResource("/MazeFX.css").toString());
+//        getClass().getResource("MazeFX.css").toString();
+//        scene.getStylesheets().add("/Users/aramatthew/workspace/Maze/src/main/resources/com/maze/mazeFX/View/MazeFX.css");
+
+        //scene.getStylesheets().add(getClass().getResource("/MazeFX.css").toString());
+        //scene.getStylesheets().add(getClass().getResource("/MazeFX.css").toExternalForm());
+
+
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();
     }
     public void run(){
-//            running.set(true);
-//            while(running.get()){
-//                GenerateMaze();
-//
-//            }
         GenerateMaze();
         SolveMaze();
+
     };
 
     public static void main(String[] args) {
