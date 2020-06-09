@@ -184,3 +184,586 @@
 2020-06-04 15:23:30,349 [INFO] in scala-execution-context-global-32 - [[37minfo[0m] c.j.m.s.Util$ - 5
 2020-06-04 15:23:30,469 [INFO] in scala-execution-context-global-32 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1267193478
 2020-06-04 15:23:39,839 [INFO] in scala-execution-context-global-32 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 15:51:06,477 [INFO] in scala-execution-context-global-43 - [[37minfo[0m] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-06-04 15:51:06,478 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-06-04 15:51:06,480 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.j.i.s.MonocleInitializer$ - screen: null
+2020-06-04 15:51:06,480 [INFO] in scala-execution-context-global-43 - Warning: Quantum will not submit render jobs, nothing should draw
+2020-06-04 15:51:06,481 [INFO] in scala-execution-context-global-43 - [[37minfo[0m] c.j.i.s.Initializer$ - finished init!
+2020-06-04 15:51:06,481 [INFO] in scala-execution-context-global-43 - [[37minfo[0m] c.j.i.s.Initializer$ - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-172819
+2020-06-04 15:51:06,852 [INFO] in scala-execution-context-global-43 - [[37minfo[0m] c.j.i.c.m.ChartJSONImExporter - Imported chart data Thu Jun 04 15:51:06 PDT 2020
+2020-06-04 15:51:06,856 [INFO] in scala-execution-context-global-43 - [[37minfo[0m] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-06-04 15:51:07,131 [INFO] in scala-execution-context-global-43 - [[37minfo[0m] play.api.Play - Application started (Prod)
+2020-06-04 15:51:08,173 [INFO] in scala-execution-context-global-43 - [[37minfo[0m] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-06-04 15:51:09,775 [INFO] in scala-execution-context-global-43 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-04 15:51:09,795 [INFO] in scala-execution-context-global-43 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-04 15:51:09,799 [INFO] in scala-execution-context-global-43 - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-06-04 15:51:09,800 [INFO] in scala-execution-context-global-43 - [[37minfo[0m] c.jpro - host          localhost:8080
+2020-06-04 15:51:09,800 [INFO] in scala-execution-context-global-43 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-04 15:51:10,524 [INFO] in scala-execution-context-global-43 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1631.0,977.0,false,en-US,List(en-US, en),Map(Idea-5603506d -> fcf36573-42fe-49ea-b564-4fe58576662c),Map(Host -> List(localhost:8080), Cookie -> List(Idea-5603506d=fcf36573-42fe-49ea-b564-4fe58576662c), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:60171), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591311067457|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(iupsKBL7zJ4vgJvMkeGttw==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$f-actorRefSource#324080348]
+2020-06-04 15:51:11,891 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 15:51:11,983 [INFO] in scala-execution-context-global-43 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1733555362
+2020-06-04 15:52:19,267 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-06-04 15:52:19,268 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-06-04 15:52:19,268 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.MonocleInitializer$ - screen: null
+2020-06-04 15:52:19,268 [INFO] in scala-execution-context-global-31 - Warning: Quantum will not submit render jobs, nothing should draw
+2020-06-04 15:52:19,281 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.Initializer$ - finished init!
+2020-06-04 15:52:19,283 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.Initializer$ - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-172819
+2020-06-04 15:52:19,547 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.c.m.ChartJSONImExporter - Imported chart data Thu Jun 04 15:52:19 PDT 2020
+2020-06-04 15:52:19,550 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-06-04 15:52:19,782 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] play.api.Play - Application started (Prod)
+2020-06-04 15:52:20,462 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-06-04 15:52:27,864 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - application requested: 1825990232!default
+2020-06-04 15:52:27,877 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - Creating Application: 1825990232!default
+2020-06-04 15:52:27,880 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-06-04 15:52:27,882 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - host          localhost:8080
+2020-06-04 15:52:27,882 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - uri           /app/1825990232!default
+2020-06-04 15:52:28,250 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByID(1825990232,Some(AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1631.0,977.0,false,en-US,List(en-US, en),Map(Idea-5603506d -> fcf36573-42fe-49ea-b564-4fe58576662c),Map(Host -> List(localhost:8080), Cookie -> List(Idea-5603506d=fcf36573-42fe-49ea-b564-4fe58576662c), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:60352), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/1825990232!default), Tls-Session-Info -> List(Session(1591311140046|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(vpSQwBqUwpcOYhm9KlXenw==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$d-actorRefSource#1367218486]
+2020-06-04 15:52:29,416 [INFO] in scala-execution-context-global-46 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 15:52:29,475 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 857639558
+2020-06-04 15:55:07,030 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] p.c.s.AkkaHttpServer - Stopping server...
+2020-06-04 15:55:13,147 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-06-04 15:55:13,147 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-06-04 15:55:13,147 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.MonocleInitializer$ - screen: null
+2020-06-04 15:55:13,147 [INFO] in scala-execution-context-global-44 - Warning: Quantum will not submit render jobs, nothing should draw
+2020-06-04 15:55:13,147 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - finished init!
+2020-06-04 15:55:13,149 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-172819
+2020-06-04 15:55:13,564 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.c.m.ChartJSONImExporter - Imported chart data Thu Jun 04 15:55:12 PDT 2020
+2020-06-04 15:55:13,567 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-06-04 15:55:14,016 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] play.api.Play - Application started (Prod)
+2020-06-04 15:55:15,351 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-06-04 15:55:17,098 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-04 15:55:17,114 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-04 15:55:17,119 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-06-04 15:55:17,119 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - host          localhost:8080
+2020-06-04 15:55:17,119 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-04 15:55:18,014 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1631.0,977.0,false,en-US,List(en-US, en),Map(Idea-5603506d -> fcf36573-42fe-49ea-b564-4fe58576662c),Map(Host -> List(localhost:8080), Cookie -> List(Idea-5603506d=fcf36573-42fe-49ea-b564-4fe58576662c), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:60627), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591311314470|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(kFF7tHUbu6pQ1anlHrPchA==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$f-actorRefSource#-1905408990]
+2020-06-04 15:55:18,653 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - application requested: 1330935293!default
+2020-06-04 15:55:18,654 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - Creating Application: 1330935293!default
+2020-06-04 15:55:18,654 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-06-04 15:55:18,655 [INFO] in scala-execution-context-global-51 - [[37minfo[0m] c.jpro - host          localhost:8080
+2020-06-04 15:55:18,656 [INFO] in scala-execution-context-global-51 - [[37minfo[0m] c.jpro - uri           /app/1330935293!default
+2020-06-04 15:55:19,630 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByID(1330935293,Some(AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1631.0,977.0,false,en-US,List(en-US, en),Map(Idea-5603506d -> fcf36573-42fe-49ea-b564-4fe58576662c),Map(Host -> List(localhost:8080), Cookie -> List(Idea-5603506d=fcf36573-42fe-49ea-b564-4fe58576662c), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:60629), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/1330935293!default), Tls-Session-Info -> List(Session(1591311314470|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(vj1fOD4Ev4bophbilRd9rQ==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$h-actorRefSource#-940315977]
+2020-06-04 15:55:19,788 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.jpro - application requested: 880816672!default
+2020-06-04 15:55:19,789 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.jpro - Creating Application: 880816672!default
+2020-06-04 15:55:19,791 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-06-04 15:55:19,791 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - host          localhost:8080
+2020-06-04 15:55:19,792 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - uri           /app/880816672!default
+2020-06-04 15:55:19,934 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 15:55:19,934 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-04 15:55:19,938 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Thu Jun 04 15:55:17 PDT 2020      
+2020-06-04 15:55:19,940 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.000 
+2020-06-04 15:55:19,940 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.000  
+2020-06-04 15:55:19,941 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-04 15:55:19,942 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-04 15:55:19,944 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 0
+2020-06-04 15:55:19,944 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 0
+2020-06-04 15:55:19,944 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 15:55:19,948 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByID(880816672,Some(AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1631.0,977.0,false,en-US,List(en-US, en),Map(Idea-5603506d -> fcf36573-42fe-49ea-b564-4fe58576662c),Map(Host -> List(localhost:8080), Cookie -> List(Idea-5603506d=fcf36573-42fe-49ea-b564-4fe58576662c), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:60630), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/880816672!default), Tls-Session-Info -> List(Session(1591311314470|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(h3Hl5a1A1K8/jwMUeFY+tQ==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$j-actorRefSource#-535866347]
+2020-06-04 15:55:20,170 [INFO] in scala-execution-context-global-51 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 15:55:20,183 [INFO] in scala-execution-context-global-51 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 15:55:20,186 [INFO] in scala-execution-context-global-51 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 15:55:20,397 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1472790103
+2020-06-04 15:55:20,398 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1781726749
+2020-06-04 15:55:22,866 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2020-06-04 15:55:52,578 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 15:55:52,589 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-04 15:55:52,590 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Thu Jun 04 15:55:52 PDT 2020      
+2020-06-04 15:55:52,590 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.033 
+2020-06-04 15:55:52,590 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.021  
+2020-06-04 15:55:52,590 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-04 15:55:52,590 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-04 15:55:52,590 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 83856
+2020-06-04 15:55:52,590 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 13484
+2020-06-04 15:55:52,590 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 15:56:08,991 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2020-06-04 16:01:22,774 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-06-04 16:01:22,774 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-06-04 16:01:22,774 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.MonocleInitializer$ - screen: null
+2020-06-04 16:01:22,775 [INFO] in scala-execution-context-global-31 - Warning: Quantum will not submit render jobs, nothing should draw
+2020-06-04 16:01:22,776 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - finished init!
+2020-06-04 16:01:22,776 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-172819
+2020-06-04 16:01:23,071 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.c.m.ChartJSONImExporter - Imported chart data Thu Jun 04 16:01:22 PDT 2020
+2020-06-04 16:01:23,074 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-06-04 16:01:23,434 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] play.api.Play - Application started (Prod)
+2020-06-04 16:01:24,166 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-06-04 16:01:24,604 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - application requested: 1486770037!default
+2020-06-04 16:01:24,625 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - Creating Application: 1486770037!default
+2020-06-04 16:01:24,627 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-06-04 16:01:24,629 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - host          localhost:8080
+2020-06-04 16:01:24,630 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - uri           /app/1486770037!default
+2020-06-04 16:01:24,996 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByID(1486770037,Some(AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1631.0,977.0,false,en-US,List(en-US, en),Map(Idea-5603506d -> fcf36573-42fe-49ea-b564-4fe58576662c),Map(Host -> List(localhost:8080), Cookie -> List(Idea-5603506d=fcf36573-42fe-49ea-b564-4fe58576662c), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:60980), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/1486770037!default), Tls-Session-Info -> List(Session(1591311683658|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(MZQSBtY4FEPOK6L8XeRMtg==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$d-actorRefSource#927932304]
+2020-06-04 16:01:26,107 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:01:26,167 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1467404332
+2020-06-04 16:09:53,577 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-04 16:09:53,578 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-04 16:09:53,579 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-06-04 16:09:53,580 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - host          localhost:8080
+2020-06-04 16:09:53,580 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-04 16:09:53,749 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1631.0,977.0,false,en-US,List(en-US, en),Map(Idea-5603506d -> fcf36573-42fe-49ea-b564-4fe58576662c),Map(Host -> List(localhost:8080), Cookie -> List(Idea-5603506d=fcf36573-42fe-49ea-b564-4fe58576662c), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:61711), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591311683658|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(sFj2pYC29fEkY2/YOEQw2A==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$i-actorRefSource#1440358724]
+2020-06-04 16:09:53,858 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:09:53,912 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 683159052
+2020-06-04 16:10:21,146 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:15:59,040 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-04 16:15:59,042 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-04 16:15:59,042 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - remoteAddress 192.168.1.206
+2020-06-04 16:15:59,042 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - host          192.168.1.206:8080
+2020-06-04 16:15:59,042 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-04 16:15:59,205 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.206:8080/,http://192.168.1.206:8080/app/default,1631.0,977.0,false,en-US,List(en-US, en),Map(),Map(Host -> List(192.168.1.206:8080), Origin -> List(http://192.168.1.206:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(192.168.1.206:62101), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591311683658|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(ksSH6M/I/goizEao72ke2Q==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$m-actorRefSource#-370237061]
+2020-06-04 16:15:59,297 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:15:59,348 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1588627578
+2020-06-04 16:16:35,802 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-04 16:16:35,804 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-04 16:16:35,805 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - remoteAddress 192.168.1.15
+2020-06-04 16:16:35,805 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - host          192.168.1.206:8080
+2020-06-04 16:16:35,805 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-04 16:16:35,842 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.206:8080/,http://192.168.1.206:8080/app/default,414.0,604.0,true,en,List(en),Map(),Map(Host -> List(192.168.1.206:8080), Origin -> List(http://192.168.1.206:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (iPhone; CPU iPhone OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/267.0.0.57.120;FBBV/218062475;FBDV/iPhone10,2;FBMD/iPhone;FBSN/iOS;FBSV/13.4.1;FBSS/3;FBCR/;FBID/phone;FBLC/en_US;FBOP/0]), Cache-Control -> List(no-cache), Remote-Address -> List(192.168.1.15:58790), Timeout-Access -> List(<function1>), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591311683658|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(qxbm9fWL36LmyNt7oTbBKA==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(x-webkit-deflate-frame)))out: Actor[akka://application/system/StreamSupervisor-0/$$q-actorRefSource#-127608332]
+2020-06-04 16:16:35,883 [INFO] in scala-execution-context-global-55 - [[33mwarn[0m] com.jpro.JS - received msg: Audio not supported on this client!
+2020-06-04 16:16:35,894 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:16:35,965 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1607371300
+2020-06-04 16:16:40,347 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:16:40,347 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-04 16:16:40,348 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Thu Jun 04 16:16:40 PDT 2020      
+2020-06-04 16:16:40,348 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.005 
+2020-06-04 16:16:40,348 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.009  
+2020-06-04 16:16:40,349 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-04 16:16:40,350 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-04 16:16:40,350 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 47376
+2020-06-04 16:16:40,350 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 6384
+2020-06-04 16:16:40,350 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:16:46,826 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2020-06-04 16:17:15,878 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-04 16:17:15,879 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-04 16:17:15,880 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - remoteAddress 192.168.1.96
+2020-06-04 16:17:15,880 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - host          192.168.1.206:8080
+2020-06-04 16:17:15,880 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-04 16:17:15,919 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.206:8080/,http://192.168.1.206:8080/app/default,375.0,632.0,true,en,List(en),Map(),Map(Host -> List(192.168.1.206:8080), Origin -> List(http://192.168.1.206:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (iPhone; CPU iPhone OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/267.0.0.57.120;FBBV/218062475;FBDV/iPhone12,5;FBMD/iPhone;FBSN/iOS;FBSV/13.4.1;FBSS/3;FBCR/;FBID/phone;FBLC/en_US;FBOP/0]), Cache-Control -> List(no-cache), Remote-Address -> List(192.168.1.96:59548), Timeout-Access -> List(<function1>), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591311683658|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(8BQrRHtuaIUx2kwzR/AUPg==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(x-webkit-deflate-frame)))out: Actor[akka://application/system/StreamSupervisor-0/$$u-actorRefSource#-942695425]
+2020-06-04 16:17:15,954 [INFO] in scala-execution-context-global-31 - [[33mwarn[0m] com.jpro.JS - received msg: Audio not supported on this client!
+2020-06-04 16:17:15,972 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:17:16,022 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 348708948
+2020-06-04 16:17:45,309 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:17:45,309 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-04 16:17:45,309 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Thu Jun 04 16:17:45 PDT 2020      
+2020-06-04 16:17:45,309 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.010 
+2020-06-04 16:17:45,309 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.016  
+2020-06-04 16:17:45,309 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-04 16:17:45,309 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-04 16:17:45,309 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 627736
+2020-06-04 16:17:45,309 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 110607
+2020-06-04 16:17:45,309 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:17:45,910 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - application requested: 2143749240!default
+2020-06-04 16:17:45,911 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - Creating Application: 2143749240!default
+2020-06-04 16:17:45,912 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - remoteAddress 192.168.1.96
+2020-06-04 16:17:45,913 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - host          192.168.1.206:8080
+2020-06-04 16:17:45,913 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.jpro - uri           /app/2143749240!default
+2020-06-04 16:17:45,942 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByID(2143749240,Some(AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://192.168.1.206:8080/,http://192.168.1.206:8080/app/default,375.0,632.0,true,en,List(en),Map(),Map(Host -> List(192.168.1.206:8080), Origin -> List(http://192.168.1.206:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (iPhone; CPU iPhone OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/267.0.0.57.120;FBBV/218062475;FBDV/iPhone12,5;FBMD/iPhone;FBSN/iOS;FBSV/13.4.1;FBSS/3;FBCR/;FBID/phone;FBLC/en_US;FBOP/0]), Cache-Control -> List(no-cache), Remote-Address -> List(192.168.1.96:59549), Timeout-Access -> List(<function1>), Raw-Request-URI -> List(/app/2143749240!default), Tls-Session-Info -> List(Session(1591311683658|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(Dmg+ZHqudIxWn9rQaUtOrg==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(x-webkit-deflate-frame)))out: Actor[akka://application/system/StreamSupervisor-0/$$w-actorRefSource#324178772]
+2020-06-04 16:17:45,971 [INFO] in scala-execution-context-global-44 - [[33mwarn[0m] com.jpro.JS - received msg: Audio not supported on this client!
+2020-06-04 16:17:45,996 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:17:46,053 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1753912068
+2020-06-04 16:17:46,256 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:17:46,256 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-04 16:17:46,256 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Thu Jun 04 16:17:46 PDT 2020      
+2020-06-04 16:17:46,256 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.000 
+2020-06-04 16:17:46,257 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.000  
+2020-06-04 16:17:46,257 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-04 16:17:46,257 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-04 16:17:46,257 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 35552
+2020-06-04 16:17:46,257 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 4815
+2020-06-04 16:17:46,257 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:17:46,349 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-04 16:17:46,351 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-04 16:17:46,351 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.jpro - remoteAddress 192.168.1.96
+2020-06-04 16:17:46,351 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.jpro - host          192.168.1.206:8080
+2020-06-04 16:17:46,351 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-04 16:17:46,388 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.206:8080/,http://192.168.1.206:8080/app/default,375.0,632.0,true,en,List(en),Map(),Map(Host -> List(192.168.1.206:8080), Origin -> List(http://192.168.1.206:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (iPhone; CPU iPhone OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/267.0.0.57.120;FBBV/218062475;FBDV/iPhone12,5;FBMD/iPhone;FBSN/iOS;FBSV/13.4.1;FBSS/3;FBCR/;FBID/phone;FBLC/en_US;FBOP/0]), Cache-Control -> List(no-cache), Remote-Address -> List(192.168.1.96:59551), Timeout-Access -> List(<function1>), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591311683658|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(B9saBzO17PAR0L7Gz+gaNw==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(x-webkit-deflate-frame)))out: Actor[akka://application/system/StreamSupervisor-0/$$y-actorRefSource#-1905093063]
+2020-06-04 16:17:46,413 [INFO] in scala-execution-context-global-44 - [[33mwarn[0m] com.jpro.JS - received msg: Audio not supported on this client!
+2020-06-04 16:17:46,419 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:17:46,457 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1810144063
+2020-06-04 16:17:51,352 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2020-06-04 16:17:53,509 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:19:08,677 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:19:08,678 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-04 16:19:08,678 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Thu Jun 04 16:19:08 PDT 2020      
+2020-06-04 16:19:08,678 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.038 
+2020-06-04 16:19:08,678 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.008  
+2020-06-04 16:19:08,678 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-04 16:19:08,678 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-04 16:19:08,678 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 7951698
+2020-06-04 16:19:08,679 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 1303955
+2020-06-04 16:19:08,679 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:19:40,795 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2020-06-04 16:20:38,384 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-04 16:20:38,391 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-04 16:20:38,391 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - remoteAddress 192.168.1.68
+2020-06-04 16:20:38,391 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - host          192.168.1.206:8080
+2020-06-04 16:20:38,391 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-04 16:20:38,502 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.206:8080/?fbclid=IwAR1mXEQoeiTB91cFArdRmch8j4wqZbRPGnjTM-ohVhawUYMN1QZI08Kka9o,http://192.168.1.206:8080/app/default,1536.0,775.0,false,en-US,List(en-US, en),Map(),Map(Host -> List(192.168.1.206:8080), Origin -> List(http://192.168.1.206:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(192.168.1.68:58931), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591311683658|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(d36DKbVCDItQcDNeas17VQ==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$B-actorRefSource#1027973788]
+2020-06-04 16:20:38,549 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:20:38,624 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 96270684
+2020-06-04 16:21:04,990 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.m.s.Util$ - 10
+2020-06-04 16:24:17,698 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-04 16:24:17,699 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-04 16:24:17,700 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-06-04 16:24:17,700 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - host          localhost:8080
+2020-06-04 16:24:17,700 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-04 16:24:17,916 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1631.0,977.0,false,en-US,List(en-US, en),Map(Idea-5603506d -> fcf36573-42fe-49ea-b564-4fe58576662c),Map(Host -> List(localhost:8080), Cookie -> List(Idea-5603506d=fcf36573-42fe-49ea-b564-4fe58576662c), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:62324), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591311683658|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(XZhRFFueO2zjs/lNqa6ccg==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$G-actorRefSource#-27689015]
+2020-06-04 16:24:17,965 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:24:18,111 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 377502200
+2020-06-04 16:24:33,213 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:24:33,213 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-04 16:24:33,213 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Thu Jun 04 16:24:33 PDT 2020      
+2020-06-04 16:24:33,213 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.021 
+2020-06-04 16:24:33,213 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.002  
+2020-06-04 16:24:33,213 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-04 16:24:33,213 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-04 16:24:33,213 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 582928
+2020-06-04 16:24:33,213 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 146738
+2020-06-04 16:24:33,213 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:24:34,057 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:24:34,057 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-04 16:24:34,057 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Thu Jun 04 16:24:34 PDT 2020      
+2020-06-04 16:24:34,057 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.021 
+2020-06-04 16:24:34,057 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.002  
+2020-06-04 16:24:34,057 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-04 16:24:34,057 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-04 16:24:34,057 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 701050
+2020-06-04 16:24:34,057 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 142261
+2020-06-04 16:24:34,057 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:24:43,231 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2020-06-04 16:27:28,936 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2020-06-04 16:30:03,967 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-04 16:30:03,978 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-04 16:30:03,978 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - remoteAddress 192.168.1.206
+2020-06-04 16:30:03,978 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - host          192.168.1.206:8080
+2020-06-04 16:30:03,978 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-04 16:30:04,167 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.206:8080/?fbclid=IwAR3oGDDUy0WdI3yeN6KdbHHUSgas_XWuz5i2igeLlQrvE2OPsDPnr9xPpx8,http://192.168.1.206:8080/app/default,1631.0,977.0,false,en-US,List(en-US, en),Map(),Map(Host -> List(192.168.1.206:8080), Origin -> List(http://192.168.1.206:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(192.168.1.206:62728), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591311683658|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(mHjQ0x3cIkcvgkh/0pZuxA==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$K-actorRefSource#1197095221]
+2020-06-04 16:30:04,219 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:30:04,275 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 778656214
+2020-06-04 16:30:13,223 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:30:14,537 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.m.s.Util$ - 100
+2020-06-04 16:30:44,222 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:31:04,776 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:31:05,902 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.m.s.Util$ - 250
+2020-06-04 16:31:13,388 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:32:23,248 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-04 16:32:23,256 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-04 16:32:23,256 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - remoteAddress 192.168.1.96
+2020-06-04 16:32:23,256 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - host          192.168.1.206:8080
+2020-06-04 16:32:23,256 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-04 16:32:23,285 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.206:8080/,http://192.168.1.206:8080/app/default,375.0,632.0,true,en,List(en),Map(),Map(Host -> List(192.168.1.206:8080), Origin -> List(http://192.168.1.206:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (iPhone; CPU iPhone OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/267.0.0.57.120;FBBV/218062475;FBDV/iPhone12,5;FBMD/iPhone;FBSN/iOS;FBSV/13.4.1;FBSS/3;FBCR/;FBID/phone;FBLC/en_US;FBOP/0]), Cache-Control -> List(no-cache), Remote-Address -> List(192.168.1.96:59567), Timeout-Access -> List(<function1>), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591311683658|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(AX0Tr+xarSWkdsfz0bYDNg==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(x-webkit-deflate-frame)))out: Actor[akka://application/system/StreamSupervisor-0/$$O-actorRefSource#-832612218]
+2020-06-04 16:32:23,334 [INFO] in scala-execution-context-global-55 - [[33mwarn[0m] com.jpro.JS - received msg: Audio not supported on this client!
+2020-06-04 16:32:23,355 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:32:23,390 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 58262319
+2020-06-04 16:33:01,396 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:33:01,397 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-04 16:33:01,398 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Thu Jun 04 16:33:01 PDT 2020      
+2020-06-04 16:33:01,398 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.047 
+2020-06-04 16:33:01,399 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.021  
+2020-06-04 16:33:01,399 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-04 16:33:01,399 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-04 16:33:01,399 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 530820
+2020-06-04 16:33:01,400 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 88239
+2020-06-04 16:33:01,400 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:33:18,970 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2020-06-04 16:38:46,919 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - application requested: 1007802780!default
+2020-06-04 16:38:46,921 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - Creating Application: 1007802780!default
+2020-06-04 16:38:46,922 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - remoteAddress 192.168.1.96
+2020-06-04 16:38:46,922 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - host          192.168.1.206:8080
+2020-06-04 16:38:46,922 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.jpro - uri           /app/1007802780!default
+2020-06-04 16:38:46,962 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByID(1007802780,Some(AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://192.168.1.206:8080/,http://192.168.1.206:8080/app/default,375.0,632.0,true,en,List(en),Map(),Map(Host -> List(192.168.1.206:8080), Origin -> List(http://192.168.1.206:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (iPhone; CPU iPhone OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/267.0.0.57.120;FBBV/218062475;FBDV/iPhone12,5;FBMD/iPhone;FBSN/iOS;FBSV/13.4.1;FBSS/3;FBCR/;FBID/phone;FBLC/en_US;FBOP/0]), Cache-Control -> List(no-cache), Remote-Address -> List(192.168.1.96:59568), Timeout-Access -> List(<function1>), Raw-Request-URI -> List(/app/1007802780!default), Tls-Session-Info -> List(Session(1591311683658|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(f3CAW3mTU1HLkhsELHqIwQ==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(x-webkit-deflate-frame)))out: Actor[akka://application/system/StreamSupervisor-0/$$Q-actorRefSource#-78888655]
+2020-06-04 16:38:47,002 [INFO] in scala-execution-context-global-31 - [[33mwarn[0m] com.jpro.JS - received msg: Audio not supported on this client!
+2020-06-04 16:38:47,002 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 16:38:47,075 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1663681270
+2020-06-04 16:40:12,990 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:40:12,996 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-04 16:40:12,997 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Thu Jun 04 16:40:12 PDT 2020      
+2020-06-04 16:40:12,997 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.033 
+2020-06-04 16:40:12,997 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.005  
+2020-06-04 16:40:12,997 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-04 16:40:12,997 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-04 16:40:12,997 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 468851
+2020-06-04 16:40:12,997 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 84750
+2020-06-04 16:40:12,997 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:40:46,358 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2020-06-04 16:58:12,114 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.m.s.Util$ - 45
+2020-06-04 16:58:15,757 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.m.s.Util$ - 300
+2020-06-04 16:58:22,032 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 16:58:22,032 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-04 16:58:22,033 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Thu Jun 04 16:58:22 PDT 2020      
+2020-06-04 16:58:22,033 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.024 
+2020-06-04 16:58:22,033 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.005  
+2020-06-04 16:58:22,033 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-04 16:58:22,034 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-04 16:58:22,034 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 2346502
+2020-06-04 16:58:22,034 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 623664
+2020-06-04 16:58:22,034 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 17:00:24,780 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.m.s.Util$ - 25
+2020-06-04 17:01:03,152 [INFO] in scala-execution-context-global-54 - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 187
+2020-06-04 17:01:03,342 [INFO] in scala-execution-context-global-54 - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 187
+2020-06-04 17:01:03,785 [INFO] in scala-execution-context-global-54 - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 187
+2020-06-04 17:01:03,786 [INFO] in scala-execution-context-global-54 - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 187
+2020-06-04 17:01:03,786 [INFO] in scala-execution-context-global-54 - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 187
+2020-06-04 17:01:04,217 [INFO] in scala-execution-context-global-54 - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 187
+2020-06-04 17:01:04,217 [INFO] in scala-execution-context-global-54 - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 187
+2020-06-04 17:01:05,473 [INFO] in scala-execution-context-global-54 - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 189
+2020-06-04 17:01:05,865 [INFO] in scala-execution-context-global-55 - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 189
+2020-06-04 17:01:06,282 [INFO] in scala-execution-context-global-54 - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 189
+2020-06-04 17:01:09,466 [INFO] in scala-execution-context-global-54 - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 189
+2020-06-04 17:01:11,902 [INFO] in scala-execution-context-global-55 - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 189
+2020-06-04 17:01:11,902 [INFO] in scala-execution-context-global-55 - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 189
+2020-06-04 17:01:25,963 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.m.s.Util$ - 50
+2020-06-04 17:03:26,165 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.m.s.Util$ - 20
+2020-06-04 17:05:50,198 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 17:05:50,228 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-04 17:05:50,228 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Thu Jun 04 17:05:50 PDT 2020      
+2020-06-04 17:05:50,228 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.023 
+2020-06-04 17:05:50,228 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.006  
+2020-06-04 17:05:50,228 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-04 17:05:50,228 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-04 17:05:50,228 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 87457629
+2020-06-04 17:05:50,229 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 18070277
+2020-06-04 17:05:50,229 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 17:11:05,040 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 17:11:13,231 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 17:11:13,231 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-04 17:11:13,232 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Thu Jun 04 17:11:13 PDT 2020      
+2020-06-04 17:11:13,232 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.019 
+2020-06-04 17:11:13,232 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.001  
+2020-06-04 17:11:13,233 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-04 17:11:13,233 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-04 17:11:13,233 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 2524047
+2020-06-04 17:11:13,233 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 699767
+2020-06-04 17:11:13,233 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-04 17:13:16,711 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-04 17:13:16,711 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-04 17:13:16,712 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.jpro - remoteAddress 192.168.1.206
+2020-06-04 17:13:16,712 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.jpro - host          192.168.1.206:8080
+2020-06-04 17:13:16,712 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-04 17:13:16,887 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.206:8080/,http://192.168.1.206:8080/app/default,1483.0,888.0,false,en-US,List(en-US, en),Map(),Map(Host -> List(192.168.1.206:8080), Origin -> List(http://192.168.1.206:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(192.168.1.206:64417), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591311683658|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(KyHgkMh+rztiTmdc69Rd4g==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$V-actorRefSource#1966309730]
+2020-06-04 17:13:16,932 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-04 17:13:16,982 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1565846660
+2020-06-07 20:50:28,256 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-06-07 20:50:28,256 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-06-07 20:50:28,258 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.j.i.s.MonocleInitializer$ - screen: null
+2020-06-07 20:50:28,260 [INFO] in scala-execution-context-global-30 - Warning: Quantum will not submit render jobs, nothing should draw
+2020-06-07 20:50:28,260 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.j.i.s.Initializer$ - finished init!
+2020-06-07 20:50:28,260 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.j.i.s.Initializer$ - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-172819
+2020-06-07 20:50:28,691 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.j.i.c.m.ChartJSONImExporter - Imported chart data Sun Jun 07 20:50:27 PDT 2020
+2020-06-07 20:50:28,694 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-06-07 20:50:28,976 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] play.api.Play - Application started (Prod)
+2020-06-07 20:50:29,901 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-06-07 20:50:31,391 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-07 20:50:31,411 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-07 20:50:31,416 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-06-07 20:50:31,417 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.jpro - host          localhost:8080
+2020-06-07 20:50:31,417 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-07 20:50:31,963 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1440.0,797.0,false,en-US,List(en-US, en),Map(Idea-5603506d -> fcf36573-42fe-49ea-b564-4fe58576662c),Map(Host -> List(localhost:8080), Cookie -> List(Idea-5603506d=fcf36573-42fe-49ea-b564-4fe58576662c), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:50272), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591588229381|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(GUPJbM/DObnBrmT3YxInpg==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$f-actorRefSource#207336950]
+2020-06-07 20:50:33,060 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-07 20:50:33,160 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1985141466
+2020-06-07 20:50:42,315 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-07 20:50:43,730 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.m.s.Util$ - 50
+2020-06-07 20:50:45,678 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.m.s.Util$ - 10
+2020-06-07 20:51:33,320 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.j.m.s.Util$ - 15
+2020-06-07 20:52:11,816 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-07 20:52:11,817 [INFO] in scala-execution-context-global-30 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-07 20:52:11,817 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Sun Jun 07 20:52:11 PDT 2020      
+2020-06-07 20:52:11,820 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.020 
+2020-06-07 20:52:11,821 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.002  
+2020-06-07 20:52:11,821 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-07 20:52:11,821 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-07 20:52:11,821 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 3583209
+2020-06-07 20:52:11,821 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 617899
+2020-06-07 20:52:11,821 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-08 16:37:32,793 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-06-08 16:37:32,793 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-06-08 16:37:32,794 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.MonocleInitializer$ - screen: null
+2020-06-08 16:37:32,794 [INFO] in scala-execution-context-global-44 - Warning: Quantum will not submit render jobs, nothing should draw
+2020-06-08 16:37:32,794 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - finished init!
+2020-06-08 16:37:32,795 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-172819
+2020-06-08 16:37:33,076 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.c.m.ChartJSONImExporter - Imported chart data Mon Jun 08 16:37:32 PDT 2020
+2020-06-08 16:37:33,078 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-06-08 16:37:33,372 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] play.api.Play - Application started (Prod)
+2020-06-08 16:37:34,183 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-06-08 16:37:35,746 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-08 16:37:35,762 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-08 16:37:35,767 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-06-08 16:37:35,768 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - host          localhost:8080
+2020-06-08 16:37:35,768 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-08 16:37:36,536 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,995.0,957.0,false,en-US,List(en-US, en),Map(Idea-5603506d -> fcf36573-42fe-49ea-b564-4fe58576662c),Map(Host -> List(localhost:8080), Cookie -> List(Idea-5603506d=fcf36573-42fe-49ea-b564-4fe58576662c), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:59190), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591659453671|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(JCB9Z8d09lnKjR2yK/1s3g==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$f-actorRefSource#-1501983341]
+2020-06-08 16:37:37,809 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-08 16:37:37,891 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1862553021
+2020-06-08 16:37:45,900 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-08 16:37:48,206 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-08 16:37:48,206 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-08 16:37:48,208 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Mon Jun 08 16:37:48 PDT 2020      
+2020-06-08 16:37:48,209 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.021 
+2020-06-08 16:37:48,216 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.002  
+2020-06-08 16:37:48,217 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-08 16:37:48,217 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-08 16:37:48,217 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 475427
+2020-06-08 16:37:48,217 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 75041
+2020-06-08 16:37:48,217 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-08 16:37:57,075 [INFO] in scala-execution-context-global-56 - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2020-06-09 10:47:33,547 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-06-09 10:47:33,557 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-06-09 10:47:33,558 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.MonocleInitializer$ - screen: null
+2020-06-09 10:47:33,561 [INFO] in scala-execution-context-global-31 - Warning: Quantum will not submit render jobs, nothing should draw
+2020-06-09 10:47:33,561 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.Initializer$ - finished init!
+2020-06-09 10:47:33,561 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.Initializer$ - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-172819
+2020-06-09 10:47:33,851 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.c.m.ChartJSONImExporter - Imported chart data Tue Jun 09 10:47:33 PDT 2020
+2020-06-09 10:47:33,855 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-06-09 10:47:34,175 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] play.api.Play - Application started (Prod)
+2020-06-09 10:47:35,154 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-06-09 10:47:36,576 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-09 10:47:36,594 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-09 10:47:36,597 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-06-09 10:47:36,597 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - host          localhost:8080
+2020-06-09 10:47:36,598 [INFO] in scala-execution-context-global-46 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-09 10:47:37,174 [INFO] in scala-execution-context-global-46 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,977.0,false,en-US,List(en-US, en),Map(Idea-5603506d -> fcf36573-42fe-49ea-b564-4fe58576662c),Map(Host -> List(localhost:8080), Cookie -> List(Idea-5603506d=fcf36573-42fe-49ea-b564-4fe58576662c), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:53850), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591724854589|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(DCsISDWWvYlV0UW7v0gOQw==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$f-actorRefSource#-1240757347]
+2020-06-09 10:47:38,244 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-09 10:47:38,336 [INFO] in scala-execution-context-global-46 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1580803306
+2020-06-09 10:47:45,700 [INFO] in scala-execution-context-global-46 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-09 10:47:45,701 [INFO] in scala-execution-context-global-46 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-09 10:47:45,703 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Tue Jun 09 10:47:45 PDT 2020      
+2020-06-09 10:47:45,703 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.020 
+2020-06-09 10:47:45,703 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.032  
+2020-06-09 10:47:45,704 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-09 10:47:45,704 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-09 10:47:45,704 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 37088
+2020-06-09 10:47:45,704 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 5096
+2020-06-09 10:47:45,704 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-09 10:47:53,526 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2020-06-09 14:01:43,237 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-06-09 14:01:43,238 [INFO] in scala-execution-context-global-45 - [[37minfo[0m] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-06-09 14:01:43,239 [INFO] in scala-execution-context-global-45 - [[37minfo[0m] c.j.i.s.MonocleInitializer$ - screen: null
+2020-06-09 14:01:43,239 [INFO] in scala-execution-context-global-45 - Warning: Quantum will not submit render jobs, nothing should draw
+2020-06-09 14:01:43,239 [INFO] in scala-execution-context-global-45 - [[37minfo[0m] c.j.i.s.Initializer$ - finished init!
+2020-06-09 14:01:43,239 [INFO] in scala-execution-context-global-45 - [[37minfo[0m] c.j.i.s.Initializer$ - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-172819
+2020-06-09 14:01:43,574 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.c.m.ChartJSONImExporter - Imported chart data Tue Jun 09 14:01:42 PDT 2020
+2020-06-09 14:01:43,577 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-06-09 14:01:43,851 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] play.api.Play - Application started (Prod)
+2020-06-09 14:01:44,739 [ERROR] in scala-execution-context-global-31 - Oops, cannot start the server.
+2020-06-09 14:01:44,754 [ERROR] in scala-execution-context-global-31 - akka.stream.impl.io.ConnectionSourceStage$$anon$1$$anon$2: Bind failed because of java.net.BindException: Address already in use
+2020-06-09 14:01:44,754 [ERROR] in scala-execution-context-global-31 - Caused by: java.net.BindException: Address already in use
+2020-06-09 14:01:44,755 [ERROR] in scala-execution-context-global-45 - 	at java.base/sun.nio.ch.Net.bind0(Native Method)
+2020-06-09 14:01:44,756 [ERROR] in scala-execution-context-global-45 - 	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+2020-06-09 14:01:44,756 [ERROR] in scala-execution-context-global-45 - 	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+2020-06-09 14:01:44,756 [ERROR] in scala-execution-context-global-45 - 	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+2020-06-09 14:01:44,756 [ERROR] in scala-execution-context-global-45 - 	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+2020-06-09 14:01:44,756 [ERROR] in scala-execution-context-global-45 - 	at akka.io.TcpListener.liftedTree1$1(TcpListener.scala:59)
+2020-06-09 14:01:44,756 [ERROR] in scala-execution-context-global-45 - 	at akka.io.TcpListener.<init>(TcpListener.scala:56)
+2020-06-09 14:01:44,756 [ERROR] in scala-execution-context-global-45 - 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-09 14:01:44,756 [ERROR] in scala-execution-context-global-45 - 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-09 14:01:44,756 [ERROR] in scala-execution-context-global-45 - 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-09 14:01:44,758 [ERROR] in scala-execution-context-global-45 - 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+2020-06-09 14:01:44,758 [ERROR] in scala-execution-context-global-45 - 	at akka.util.Reflect$.instantiate(Reflect.scala:68)
+2020-06-09 14:01:44,759 [ERROR] in scala-execution-context-global-45 - 	at akka.actor.ArgsReflectConstructor.produce(IndirectActorProducer.scala:101)
+2020-06-09 14:01:44,759 [ERROR] in scala-execution-context-global-45 - 	at akka.actor.Props.newActor(Props.scala:212)
+2020-06-09 14:01:44,759 [ERROR] in scala-execution-context-global-45 - 	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+2020-06-09 14:01:44,759 [ERROR] in scala-execution-context-global-45 - 	at akka.actor.ActorCell.create(ActorCell.scala:674)
+2020-06-09 14:01:44,759 [ERROR] in scala-execution-context-global-45 - 	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+2020-06-09 14:01:44,759 [ERROR] in scala-execution-context-global-45 - 	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+2020-06-09 14:01:44,759 [ERROR] in scala-execution-context-global-45 - 	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+2020-06-09 14:01:44,759 [ERROR] in scala-execution-context-global-45 - 	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+2020-06-09 14:01:44,759 [ERROR] in scala-execution-context-global-45 - 	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+2020-06-09 14:01:44,759 [ERROR] in scala-execution-context-global-45 - 	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+2020-06-09 14:01:44,759 [ERROR] in scala-execution-context-global-45 - 	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+2020-06-09 14:01:44,759 [ERROR] in scala-execution-context-global-45 - 	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+2020-06-09 14:01:44,759 [ERROR] in scala-execution-context-global-45 - 	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2020-06-09 14:01:44,759 [ERROR] in scala-execution-context-global-45 - java.lang.reflect.InvocationTargetException
+2020-06-09 14:01:44,759 [ERROR] in scala-execution-context-global-45 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2020-06-09 14:01:44,760 [ERROR] in scala-execution-context-global-45 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2020-06-09 14:01:44,760 [ERROR] in scala-execution-context-global-45 - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2020-06-09 14:01:44,760 [ERROR] in scala-execution-context-global-45 - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2020-06-09 14:01:44,760 [ERROR] in scala-execution-context-global-45 - 	at com.jpro.boot.JProBoot.callMain(JProBoot.java:73)
+2020-06-09 14:01:44,760 [ERROR] in scala-execution-context-global-45 - 	at com.jpro.boot.JProBoot$1.run(JProBoot.java:85)
+2020-06-09 14:01:44,760 [ERROR] in scala-execution-context-global-45 - Caused by: java.lang.Exception: Prevented System.exit
+2020-06-09 14:01:44,760 [ERROR] in scala-execution-context-global-45 - 	at com.jpro.internal.server.Initializer$$anon$3.checkOnlyPermission(Initializer.scala:118)
+2020-06-09 14:01:44,760 [ERROR] in scala-execution-context-global-45 - 	at com.jpro.internal.server.Initializer$$anon$3.checkPermission(Initializer.scala:123)
+2020-06-09 14:01:44,760 [ERROR] in scala-execution-context-global-45 - 	at java.base/java.lang.SecurityManager.checkExit(SecurityManager.java:534)
+2020-06-09 14:01:44,761 [ERROR] in scala-execution-context-global-45 - 	at java.base/java.lang.Runtime.exit(Runtime.java:113)
+2020-06-09 14:01:44,761 [ERROR] in scala-execution-context-global-45 - 	at java.base/java.lang.System.exit(System.java:1746)
+2020-06-09 14:01:44,761 [ERROR] in scala-execution-context-global-45 - 	at play.core.server.RealServerProcess.exit(ServerProcess.scala:58)
+2020-06-09 14:01:44,761 [ERROR] in scala-execution-context-global-45 - 	at play.core.server.ProdServerStart$.start(ProdServerStart.scala:77)
+2020-06-09 14:01:44,761 [ERROR] in scala-execution-context-global-45 - 	at play.core.server.ProdServerStart$.main(ProdServerStart.scala:28)
+2020-06-09 14:01:44,761 [ERROR] in scala-execution-context-global-45 - 	at play.core.server.ProdServerStart.main(ProdServerStart.scala)
+2020-06-09 14:01:44,761 [ERROR] in scala-execution-context-global-45 - 	... 6 more
+2020-06-09 14:01:44,761 [INFO] in scala-execution-context-global-45 - [[33mwarn[0m] c.j.i.s.Initializer$ - JPro prevent System.exit
+2020-06-09 14:01:44,763 [INFO] in scala-execution-context-global-44 - [[31merror[0m] a.i.TcpListener - Bind failed for TCP channel on endpoint [/0.0.0.0:8080]
+2020-06-09 14:01:44,763 [INFO] in scala-execution-context-global-44 - java.net.BindException: Address already in use
+2020-06-09 14:01:44,763 [INFO] in scala-execution-context-global-44 - 	at java.base/sun.nio.ch.Net.bind0(Native Method)
+2020-06-09 14:01:44,764 [INFO] in scala-execution-context-global-44 - 	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+2020-06-09 14:01:44,764 [INFO] in scala-execution-context-global-44 - 	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+2020-06-09 14:01:44,764 [INFO] in scala-execution-context-global-44 - 	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+2020-06-09 14:01:44,764 [INFO] in scala-execution-context-global-44 - 	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+2020-06-09 14:01:44,764 [INFO] in scala-execution-context-global-44 - 	at akka.io.TcpListener.liftedTree1$1(TcpListener.scala:59)
+2020-06-09 14:01:44,764 [INFO] in scala-execution-context-global-44 - 	at akka.io.TcpListener.<init>(TcpListener.scala:56)
+2020-06-09 14:01:44,764 [INFO] in scala-execution-context-global-44 - 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-09 14:01:44,764 [INFO] in scala-execution-context-global-44 - 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-09 14:01:44,764 [INFO] in scala-execution-context-global-44 - 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-09 14:02:20,969 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-06-09 14:02:20,970 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-06-09 14:02:20,970 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.MonocleInitializer$ - screen: null
+2020-06-09 14:02:20,970 [INFO] in scala-execution-context-global-31 - Warning: Quantum will not submit render jobs, nothing should draw
+2020-06-09 14:02:20,970 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.Initializer$ - finished init!
+2020-06-09 14:02:20,970 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.Initializer$ - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-172819
+2020-06-09 14:02:21,257 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.c.m.ChartJSONImExporter - Imported chart data Tue Jun 09 14:02:20 PDT 2020
+2020-06-09 14:02:21,264 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-06-09 14:02:21,571 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] play.api.Play - Application started (Prod)
+2020-06-09 14:02:22,486 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-06-09 14:02:24,217 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-09 14:02:24,232 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-09 14:02:24,235 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-06-09 14:02:24,235 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - host          localhost:8080
+2020-06-09 14:02:24,235 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-09 14:02:24,931 [INFO] in scala-execution-context-global-45 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,928.0,false,en-US,List(en-US, en),Map(Idea-5603506d -> fcf36573-42fe-49ea-b564-4fe58576662c),Map(Host -> List(localhost:8080), Cookie -> List(Idea-5603506d=fcf36573-42fe-49ea-b564-4fe58576662c), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:59714), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591736541927|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(UbAatY4kwC9r1OeJwbjGDQ==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$f-actorRefSource#1629316253]
+2020-06-09 14:02:26,552 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-09 14:02:26,647 [INFO] in scala-execution-context-global-45 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1813554705
+2020-06-09 14:05:13,079 [INFO] in scala-execution-context-global-45 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-09 14:05:13,081 [INFO] in scala-execution-context-global-45 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-09 14:05:13,082 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-06-09 14:05:13,083 [INFO] in scala-execution-context-global-45 - [[37minfo[0m] c.jpro - host          localhost:8080
+2020-06-09 14:05:13,084 [INFO] in scala-execution-context-global-45 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-09 14:05:13,257 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,928.0,false,en-US,List(en-US, en),Map(Idea-5603506d -> fcf36573-42fe-49ea-b564-4fe58576662c),Map(Host -> List(localhost:8080), Cookie -> List(Idea-5603506d=fcf36573-42fe-49ea-b564-4fe58576662c), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:59726), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591736541927|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(bUZEGL359UDL3LBMwU4JBQ==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$j-actorRefSource#1090121398]
+2020-06-09 14:05:13,357 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-09 14:05:13,429 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1234537378
+2020-06-09 14:05:16,821 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-09 14:05:16,821 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-09 14:05:16,821 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Tue Jun 09 14:05:16 PDT 2020      
+2020-06-09 14:05:16,821 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.021 
+2020-06-09 14:05:16,821 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.030  
+2020-06-09 14:05:16,822 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-09 14:05:16,823 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-09 14:05:16,823 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 38624
+2020-06-09 14:05:16,823 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 5607
+2020-06-09 14:05:16,823 [INFO] in scala-execution-context-global-54 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-09 14:05:22,959 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2020-06-09 14:13:06,289 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-06-09 14:13:06,289 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-06-09 14:13:06,289 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.MonocleInitializer$ - screen: null
+2020-06-09 14:13:06,290 [INFO] in scala-execution-context-global-44 - Warning: Quantum will not submit render jobs, nothing should draw
+2020-06-09 14:13:06,290 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - finished init!
+2020-06-09 14:13:06,290 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.Initializer$ - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-172819
+2020-06-09 14:13:06,611 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.c.m.ChartJSONImExporter - Imported chart data Tue Jun 09 14:13:06 PDT 2020
+2020-06-09 14:13:06,624 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-06-09 14:13:06,880 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] play.api.Play - Application started (Prod)
+2020-06-09 14:13:07,638 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-06-09 14:13:09,124 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - application requested: 0!default
+2020-06-09 14:13:09,139 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2020-06-09 14:13:09,143 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-06-09 14:13:09,144 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - host          localhost:8080
+2020-06-09 14:13:09,144 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.jpro - uri           /app/0!default
+2020-06-09 14:13:09,705 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,com.maze.mazeFX.View.MazeFX,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,928.0,false,en-US,List(en-US, en),Map(Idea-5603506d -> fcf36573-42fe-49ea-b564-4fe58576662c),Map(Host -> List(localhost:8080), Cookie -> List(Idea-5603506d=fcf36573-42fe-49ea-b564-4fe58576662c), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:59930), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en-US,en;q=0.9), Raw-Request-URI -> List(/app/0!default), Tls-Session-Info -> List(Session(1591737187119|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(CFXUc/ooF1W56cm6brfnXg==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/StreamSupervisor-0/$$f-actorRefSource#1801585489]
+2020-06-09 14:13:11,092 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.m.s.Util$ - 5
+2020-06-09 14:13:11,176 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 936 userid: 1238669329
+2020-06-09 14:13:12,293 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-09 14:13:12,294 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2020-06-09 14:13:12,296 [INFO] in scala-execution-context-global-31 - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Tue Jun 09 14:13:12 PDT 2020      
+2020-06-09 14:13:12,299 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.025 
+2020-06-09 14:13:12,299 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.045  
+2020-06-09 14:13:12,299 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-06-09 14:13:12,299 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-06-09 14:13:12,299 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 35552
+2020-06-09 14:13:12,299 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 4642
+2020-06-09 14:13:12,299 [INFO] in scala-execution-context-global-44 - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2020-06-09 14:13:18,151 [INFO] in scala-execution-context-global-55 - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2020-06-09 14:35:59,464 [INFO] in scala-execution-context-global-45 - [[37minfo[0m] c.jpro.activity - Closing the server -> used memory: 86 MB  -  free system memory: 4508 MB

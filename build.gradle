@@ -15,6 +15,7 @@ buildscript {
     dependencies {
         classpath 'com.sandec.jpro:jpro-plugin-gradle:2019.2.4'
         classpath 'org.openjfx:javafx-plugin:0.0.8'
+        classpath 'se.transmode.gradle:gradle-docker:1.1'
     }
 }
 
@@ -25,6 +26,15 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'org.openjfx.javafxplugin'
+
+apply plugin: 'docker'
+
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.maze.mazeFX.View.MazeFX'
+    }
+}
 
 compileJava {
     sourceCompatibility = 11
@@ -70,3 +80,4 @@ jpro {
     port = 8080
 
 }
+

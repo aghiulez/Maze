@@ -10,5 +10,5 @@ tmp/
 logs/
 gradle.wrapper/
 build.gradle
-gradlew/
-RUNNING_PID/
+gradlew
+RUNNING_PID

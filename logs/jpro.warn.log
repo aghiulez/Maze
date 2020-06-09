@@ -56,3 +56,50 @@ java.lang.AssertionError: assertion failed: Couldn't find the instance for: AppB
 	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 2020-06-03 17:09:04,886 [WARN] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - high memory usage: 91.24597473144532%
+2020-06-04 16:16:35,882 [WARN] from com.jpro.JS in JavaFX Application Thread - received msg: Audio not supported on this client!
+2020-06-04 16:17:15,954 [WARN] from com.jpro.JS in JavaFX Application Thread - received msg: Audio not supported on this client!
+2020-06-04 16:17:45,970 [WARN] from com.jpro.JS in JavaFX Application Thread - received msg: Audio not supported on this client!
+2020-06-04 16:17:46,412 [WARN] from com.jpro.JS in JavaFX Application Thread - received msg: Audio not supported on this client!
+2020-06-04 16:32:23,325 [WARN] from com.jpro.JS in JavaFX Application Thread - received msg: Audio not supported on this client!
+2020-06-04 16:38:46,997 [WARN] from com.jpro.JS in JavaFX Application Thread - received msg: Audio not supported on this client!
+2020-06-04 17:01:03,147 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 187
+2020-06-04 17:01:03,342 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 187
+2020-06-04 17:01:03,785 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 187
+2020-06-04 17:01:03,786 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 187
+2020-06-04 17:01:03,786 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 187
+2020-06-04 17:01:04,217 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 187
+2020-06-04 17:01:04,217 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 187
+2020-06-04 17:01:05,473 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 189
+2020-06-04 17:01:05,865 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 189
+2020-06-04 17:01:06,280 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 189
+2020-06-04 17:01:09,465 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 189
+2020-06-04 17:01:11,901 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 189
+2020-06-04 17:01:11,902 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 189
+2020-06-09 14:01:44,742 [WARN] from com.jpro.internal.server.Initializer$ in Thread-0 - JPro prevent System.exit
+2020-06-09 14:01:44,747 [ERROR] from akka.io.TcpListener in application-akka.actor.default-dispatcher-6 - Bind failed for TCP channel on endpoint [/0.0.0.0:8080]
+java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at akka.io.TcpListener.liftedTree1$1(TcpListener.scala:59)
+	at akka.io.TcpListener.<init>(TcpListener.scala:56)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at akka.util.Reflect$.instantiate(Reflect.scala:68)
+	at akka.actor.ArgsReflectConstructor.produce(IndirectActorProducer.scala:101)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
