@@ -1,3 +1,4 @@
+
 .vscode/
 abandon/
 out/
@@ -5,10 +6,10 @@ out/
 exportToHTML/
 META-INF/
 .gradle/
-build/
+/build/
 tmp/
 logs/
 gradle.wrapper/
-build.gradle
-gradlew
 RUNNING_PID
+/tmp/
+/gradle/

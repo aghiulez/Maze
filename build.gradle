@@ -1,83 +1,57 @@
+group 'Project'
+version '1.0'
+apply plugin: 'java'
+sourceCompatibility = 1.11
 
-/**
- ******************  Script Configuration ******************
- */
-buildscript {
-    repositories {
-        jcenter()
-        gradlePluginPortal()
-
-        maven {
-            url "https://sandec.bintray.com/repo"
-        }
-    }
-
-    dependencies {
-        classpath 'com.sandec.jpro:jpro-plugin-gradle:2019.2.4'
-        classpath 'org.openjfx:javafx-plugin:0.0.8'
-        classpath 'se.transmode.gradle:gradle-docker:1.1'
-    }
+repositories {
+    mavenCentral()
 }
 
+def currentOS = org.gradle.internal.os.OperatingSystem.current()
+def platform
+if (currentOS.isWindows()) {
+    platform = 'win'
+} else if (currentOS.isLinux()) {
+    platform = 'linux'
+} else if (currentOS.isMacOsX()) {
+    platform = 'mac'
+}
+dependencies {
+    compile "org.openjfx:javafx-base:11:${platform}"
+    compile "org.openjfx:javafx-graphics:11:${platform}"
+    compile "org.openjfx:javafx-controls:11:${platform}"
+    compile "org.openjfx:javafx-fxml:11:${platform}"
+}
 
-/**
- ******************  Java Configuration ******************
- */
-apply plugin: 'java'
-apply plugin: 'application'
-apply plugin: 'org.openjfx.javafxplugin'
-
-apply plugin: 'docker'
-
+task run(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = "com.maze.mazeFX.Main"
+}
 
 jar {
     manifest {
-        attributes 'Main-Class': 'com.maze.mazeFX.View.MazeFX'
+        attributes 'Main-Class': 'com.maze.mazeFX.Main'
+    }
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
     }
 }
 
 compileJava {
-    sourceCompatibility = 11
-    targetCompatibility = 11
+    doFirst {
+        options.compilerArgs = [
+                '--module-path', classpath.asPath,
+                '--add-modules', 'javafx.controls,javafx.fxml'
+        ]
+    }
 }
 
-
-
-
-repositories {
-    jcenter()
-}
-
-javafx {
-    version = '11.0.2'
-    modules = [ 'javafx.base', 'javafx.graphics', 'javafx.controls', 'javafx.fxml', 'javafx.media', 'javafx.web' ]
-}
-
-
-
-/**
- ******************  jpro Configuration ******************
- */
-apply plugin: 'com.sandec.jpro'
-
-
-/**
- * App Main Class
- */
-//mainClassName = 'com.jpro.hellojpro.HelloJPro'
-mainClassName = 'com.maze.mazeFX.View.MazeFX'
-
-/**
- * jpro settings
- */
-jpro {
-    // for debugging
-    // JVMArgs << '-agentlib:jdwp=transport=dt_socket,server=n,address=5006,suspend=y'
-
-    JVMArgs << '-Xmx1000m'
-
-    //jpro server port
-    port = 8080
-
+run {
+    doFirst {
+        jvmArgs = [
+                '--module-path', classpath.asPath,
+                '--add-modules', 'javafx.controls,javafx.fxml'
+        ]
+    }
 }
 
