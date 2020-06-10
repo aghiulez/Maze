@@ -12,4 +12,4 @@ logs/
 gradle.wrapper/
 RUNNING_PID
 /tmp/
-/gradle/
+gradle/
